@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: rgb(21, 24, 33); 
+  --nav-bg-color: rgb(35, 35, 51); 
 }
 
 
@@ -13,4 +14,39 @@
 body{
   background-color: var(--main-bg-color);
   /* background-color: yellow; */
+}
+
+
+
+header {
+  background-color: var(--nav-bg-color);
+  padding: 10px;
+
+  nav {
+    /* background-color: bisque; */
+    padding: 10px;
+
+  ul {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style: none;
+
+    li {
+
+      a{
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+      }
+    }
+
+  }
+
+
+
+
+  }
 }
