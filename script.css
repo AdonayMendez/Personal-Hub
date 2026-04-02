@@ -13,6 +13,10 @@
 
 body{
   background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   /* background-color: yellow; */
 }
 
@@ -26,27 +30,44 @@ header {
     /* background-color: bisque; */
     padding: 10px;
 
-  ul {
+    ul {
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
 
-    list-style: none;
+      list-style: none;
 
-    li {
+      li {
 
-      a{
-        color: white;
-        text-decoration: none;
-        font-size: 25px;
+        a{
+          color: white;
+          text-decoration: none;
+          font-size: 25px;
+        }
       }
     }
-
   }
+}
 
 
+main{
+flex: 1;
+/* background-color: lightcoral; */
 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
-  }
+ h1{
+  color: white; 
+  font-size: 50px;
+ }
+
+}
+.hero-sec {
+  background-color: lightblue;
+  flex: 1;
+  
 }
