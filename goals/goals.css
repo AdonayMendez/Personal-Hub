@@ -15,7 +15,7 @@ body{
 
 header{
   /* background-color: yellow; */
-  padding: 10px 20px;
+  padding: 15px 20px 10px 20px;
 
   ul{
     list-style: none;
@@ -25,6 +25,8 @@ header{
     text-decoration: none;
     color: white;
     font-size: 25px;
+    padding: 5px 20px;
+    border: 1px solid var(--main-border-color);
   }
   }
 
@@ -44,11 +46,20 @@ main {
   /* background-color: brown; */
   margin-top: auto;
   text-align: center;
-
   padding: 40px;
-  font-size: 30px;
-  color: white;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+  font-size: 60px;
+  color: white;
+  padding: 13px 40px;
+  border: 1px solid var(--goals-border-color);
+  border-radius: 25px;
+
+  }
 }
 
 .goals-container {
@@ -59,6 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 20px;
 }
 
 .goals-row {
@@ -74,11 +86,15 @@ main {
       list-style: none;
 
       li{
-        
+          background-color: var(--nav-bg-color);
+          padding: 13px 40px;
+          border-radius: 15px;
+          border: 1px solid var(--goals-border-color);
+
         a {
           text-decoration: none;
           color: white; 
-
+          font-size: 25px;
         }
       }
     }
