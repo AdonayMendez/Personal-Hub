@@ -8,4 +8,80 @@
 
 body{
   background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
 }
+
+header{
+  /* background-color: yellow; */
+  padding: 10px 20px;
+
+  ul{
+    list-style: none;
+
+
+   a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+  }
+
+ 
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  /* background-color: green; */
+}
+
+.goals-title{
+  /* background-color: brown; */
+  margin-top: auto;
+  text-align: center;
+
+  padding: 40px;
+  font-size: 30px;
+  color: white;
+
+}
+
+.goals-container {
+  /* background-color: blueviolet; */
+  padding: 10px;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.goals-row {
+  /* background-color: bisque; */
+
+  nav {
+
+    ul{
+      display: flex; 
+      justify-content: space-evenly;
+      align-items: center;
+
+      list-style: none;
+
+      li{
+        
+        a {
+          text-decoration: none;
+          color: white; 
+
+        }
+      }
+    }
+  }
+}
+

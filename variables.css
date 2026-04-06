@@ -1,8 +1,14 @@
 
 /* Colors */
 :root {
+
+  /* main */
   --main-bg-color: rgb(21, 24, 33); 
   --main-border-color: rgba(0, 247, 255, 0.466);
   --nav-bg-color: rgba(35, 35, 51, 0.555); 
+
+
+  /* Goals */
+  --goals-border-colot: rgba(0, 247, 255, 0.466); 
 }
 
