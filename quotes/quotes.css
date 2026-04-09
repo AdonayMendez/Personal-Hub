@@ -1,0 +1,47 @@
+@import url('../variables.css');  
+
+*{
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box; 
+}
+
+body{
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header{
+  /* background-color: yellow; */
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    color:white; 
+    font-size: 60px;
+
+    padding: 10px 30px; 
+    border: 1px solid var(--quotes-border-color);
+  }
+}
+
+main{
+  flex: 1; 
+  /* background-color: lightblue; */
+
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  div{
+    padding: 10px;
+    border: 1px solid var(--quotes-border-color);
+  }
+}

@@ -1,14 +1,13 @@
 
 /* Colors */
 :root {
-
-  /* main */
   --main-bg-color: rgb(21, 24, 33); 
-  --main-border-color: rgba(0, 247, 255, 0.466);
   --nav-bg-color: rgba(35, 35, 51, 0.555); 
 
-
-  /* Goals */
-  --goals-border-color: rgb(153, 155, 63); 
 }
 
+:root{
+  --main-border-color: rgba(0, 247, 255, 0.466);
+  --goals-border-color: rgb(153, 155, 63); 
+  --quotes-border-color: #329BF7; 
+}
