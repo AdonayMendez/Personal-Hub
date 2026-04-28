@@ -46,5 +46,9 @@ main{
   div{
     padding: 10px;
     border: 1px solid var(--quotes-border-color);
+
+    p{
+      color: white; 
+    }
   }
 }
