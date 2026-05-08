@@ -10,4 +10,6 @@
   --main-border-color: rgba(0, 247, 255, 0.466);
   --goals-border-color: rgb(153, 155, 63); 
   --quotes-border-color: #329BF7; 
+  --quotes-base-color: rgb(179, 179, 179);
+  --quotes-font-family: 'Inter', sans-serif; 
 }

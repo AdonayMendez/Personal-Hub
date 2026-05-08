@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('../variables.css');  
+
 
 *{
   padding: 0; 
@@ -9,46 +11,60 @@
 body{
   background-color: var(--main-bg-color);
   min-height: 100vh;
-  padding: 20px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 50px;
+  /* padding: 20px; */
 }
 
 header{
-  /* background-color: yellow; */
+  background-color: rgba(179, 179, 179, 15%);
+  padding:15px 45px;
 
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 
-  h1{
-    color:white; 
-    font-size: 60px;
-
-    padding: 10px 30px; 
-    border: 1px solid var(--quotes-border-color);
+  h2{
+    font-family: var(--quotes-font-family);
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: white; 
   }
+
 }
 
 main{
-  flex: 1; 
-  /* background-color: lightblue; */
-  padding: 100px;
 
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: start;
+  .hero-section{
+    /* background-color: lightblue; */
 
-  div{
-    padding: 10px;
-    border: 1px solid var(--quotes-border-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-    p{
-      color: white; 
+    padding: 160px 100px 0px 100px;
+
+    .title{
+      color: white;
+      font-family: "Inter", sans-serif;
+      font-weight: 100;
+      font-size: 60px;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 20px;
     }
+
+    .title::after {
+      background-color: rgb(211, 209, 209);
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0; 
+
+      width: 120%; 
+      height: 8.5px; 
+
+      border-radius: 20px;
+    }
+
   }
+
 }
