@@ -16,7 +16,7 @@ body{
 
 header{
   background-color: rgba(179, 179, 179, 15%);
-  padding:15px 45px;
+  padding:10px 45px;
 
   display: inline-block;
 
@@ -29,9 +29,9 @@ header{
 
 }
 
-main{
+.hero-section{
 
-  .hero-section{
+  .hero-title{
     /* background-color: lightblue; */
 
     display: flex;
@@ -39,7 +39,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    padding: 160px 100px 0px 100px;
+    padding: 160px 100px 160px 100px;
 
     .title{
       color: white;
@@ -66,5 +66,21 @@ main{
     }
 
   }
+}
 
+.quotes-container {
+   /* background-color: lightgreen; */
+   padding: 10px 100px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.quote-child {
+  color: white; 
+
+  padding: 22px; 
+  background-color: rgba(32, 32, 44, 0.774);
+  box-shadow: 0px 8px 10px rgba(254, 233, 231, 20%);
 }
