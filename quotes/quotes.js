@@ -31,7 +31,9 @@ function addQuotesToPage(quotes){
     const quote = quotes[i];
 
     div.innerHTML = `
+    <div class="quote-child-parent">
     <div class="quote-child"> <p> ${quote.quote} </p> </div>
+    </div>
     
     `;
 
