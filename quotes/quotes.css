@@ -77,7 +77,7 @@ header:hover{
 
       animation: 
       titleAnimation 1s ease-in .5s forwards, 
-      titleShadowAnimation 4s ease-in-out 2s infinite;
+      titleShadowAnimation 4s ease-in-out 3s infinite;
 
     }
 
@@ -123,7 +123,7 @@ header:hover{
   /* --shadow-opacity: 0%; */
 
   /* Apply animation: name, duration, timing, delay, fill-mode  */
-  animation: shadowfadein 1s ease-in 2s forwards; 
+  animation: shadowfadein 1s ease-in 1.5s forwards; 
 
 
 }
