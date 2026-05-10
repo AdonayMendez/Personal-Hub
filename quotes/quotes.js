@@ -1,8 +1,13 @@
 let quotesContainer = document.getElementById("quotesContainer"); 
 
 let quotes = [
-  {id: 1, quote: "Start where you are, Use what you have, Do what you can!"},
-  {id: 2, quote: "The win is not in the size of the step. It's in the direction!"},
+  {
+    quote: "Start where you are, Use what you have, Do what you can! - [Arthur Ashe]"
+  },
+  
+  {
+    quote: "The win is not in the size of the step. It's in the direction!"
+  },
 ]; 
 
 function addQuotesToPage(quotes){
@@ -13,18 +18,20 @@ function addQuotesToPage(quotes){
 
     let div = document.createElement("div");
 
-    div.classList.add(""); 
+    div.classList.add("quotes-container"); 
 
     const quote = quotes[i];
 
     div.innerHTML = `
-      <h1> hello </h1>
-    
+    <div class="quote-child"> <p> ${quote.quote} </p> </div>
     
     `;
 
 
-    quotes.quotesContainer.appendChild(div); 
+    quotesContainer.appendChild(div); 
 
   }
 }
+
+
+addQuotesToPage(quotes);
