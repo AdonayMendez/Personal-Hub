@@ -15,7 +15,7 @@ body{
 }
 
 header{
-  background-color: rgba(179, 179, 179, 15%);
+  background-color: rgba(179, 179, 179, 5%);
   padding:10px 45px;
 
   display: inline-block;
@@ -24,7 +24,11 @@ header{
     font-family: var(--quotes-font-family);
     font-weight: 200;
     letter-spacing: 1px;
-    color: white; 
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
   }
 
 }
@@ -85,11 +89,27 @@ header{
   font-size: 18px;
   letter-spacing: 1.5px;
 
-  padding: 20px; 
-  background-color: rgba(32, 32, 44, 50%);
-  box-shadow: 0px 8px 10px rgba(254, 233, 231, 10%);
-
   display: flex;
   flex-direction: row;
   justify-content: center; 
+
+  padding: 20px; 
+  background-color: rgba(32, 32, 44, 50%);
+  box-shadow: 0px 8px 10px rgba(254, 233, 231, 0%);
+  /* --shadow-opacity: 0%; */
+
+  /* Apply animation: name, duration, timing, delay, fill-mode  */
+  animation: shadowfadein 1s ease-in forwards; 
+  animation-delay: 1s;
+}
+
+@keyframes shadowfadein {
+  to {
+   box-shadow: 0px 8px 10px rgba(254, 233, 231, 10%);
+
+  }
+}
+
+.quote-child:hover {
+     box-shadow: 0px 8px 10px rgba(254, 233, 231, 30%) !important;
 }
