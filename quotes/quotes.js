@@ -2,11 +2,15 @@ let quotesContainer = document.getElementById("quotesContainer");
 
 let quotes = [
   {
-    quote: "Start where you are, Use what you have, Do what you can! - [Arthur Ashe]"
+    quote: `"There's a difference between settling, and wanting to be the best" - [All Might]`
   },
-  
+
   {
-    quote: "The win is not in the size of the step. It's in the direction!"
+        quote: `"Start where you are, Use what you have, Do what you can!" - [Arthur Ashe]`
+  },
+
+  {
+    quote: `"The win is not in the size of the step. It's in the direction!" - [ChatGPT]`
   },
 ]; 
 
