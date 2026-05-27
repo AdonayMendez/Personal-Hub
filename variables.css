@@ -1,15 +1,19 @@
 
 /* Colors */
 :root {
+
+  /* main */
   --main-bg-color: rgb(21, 24, 33); 
   --nav-bg-color: rgba(35, 35, 51, 0.555); 
-
-}
-
-:root{
   --main-border-color: rgba(0, 247, 255, 0.466);
-  --goals-border-color: rgb(153, 155, 63); 
+
+  /* Quotes */
   --quotes-border-color: #329BF7; 
   --quotes-base-color: rgb(179, 179, 179);
   --quotes-font-family: 'Inter', sans-serif; 
+
+  /* Gaols */
+  --goals-border-color: rgb(153, 155, 63); 
+  --goals-div-bg-color: #232333; 
+
 }

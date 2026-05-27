@@ -33,9 +33,6 @@ const goals = [
     goal: "Exercise"
   },
 
-  {
-    goal: "Exercise"
-  },
 ];
 
 // A function that when called upon will be added to the child of goalsContainer div in the html
@@ -55,7 +52,7 @@ function addGoalsToPage (goals) {
 
     // To add HTML code the div varible created previously 
     // Applies to each object item individually
-    // div.innerHTML= `${goals.goal}`;
+    div.innerHTML= `<p>${goal.goal}</p>`;
 
 
     goalsContainer.appendChild(div);

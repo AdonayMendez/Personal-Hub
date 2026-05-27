@@ -26,7 +26,8 @@ header{
     color: white;
     font-size: 25px;
     padding: 5px 20px;
-    border: 1px solid var(--main-border-color);
+    /* border: 1px solid var(--main-border-color); */
+    background-color: var(--goals-div-bg-color);
   }
   }
 
@@ -56,25 +57,38 @@ main {
   font-size: 60px;
   color: white;
   padding: 13px 40px;
-  border: 1px solid var(--goals-border-color);
+  /* border: 1px solid var(--goals-border-color); */
+  background-color: var(--goals-div-bg-color);
   /* border-radius: 25px; */
 
   }
 }
 
 .goals-container {
-  background-color: blueviolet;
-  padding: 10px;
+  /* background-color: blueviolet; */
+  padding: 100px 20px 20px 20px;
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 50px 100px;
+  gap: 100px 100px;
 }
 
 .goals-row {
-  background-color: bisque;
-  width: 200px; 
-  height: 100px;
+  background-color: var(--goals-div-bg-color);
+  /* width: 200px; 
+  height: 100px; */
+  padding: 30px 100px;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+   p{
+    font-size: 20px;
+    color: white;
+   }
+
+
 }
 
