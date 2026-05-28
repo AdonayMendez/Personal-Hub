@@ -58,8 +58,12 @@ main {
   color: white;
   padding: 13px 40px;
   /* border: 1px solid var(--goals-border-color); */
-  background-color: var(--goals-div-bg-color);
+  background-color: rgba(35, 35, 51, 0.318);
   /* border-radius: 25px; */
+
+  /* x | y |blur-radius | spread-radius | color  */
+  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 0, 230, 0.493);
+
 
   }
 }
