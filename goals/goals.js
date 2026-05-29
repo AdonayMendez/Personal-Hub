@@ -1,39 +1,55 @@
 const goalsContainer = document.getElementById("goalsContainer"); 
 
-//TODO: Add Completion Status + Comment + Shawdow
-
-const goals = [ 
-  
+let goals = [
   {
-    title: "Exercise"
+    // title: ""
   },
 
   {
-    title: "Exercise"
+    // title: ""
   },
 
+  {
+    // title: ""
+  },
 
   {
-    title: "Exercise"
+    // title: ""
+  },
+
+  {
+    // title: ""
+  },
+
+  {
+    // title: ""
+  },
+
+  {
+    // title: ""
+  },
+
+  {
+    // title: ""
   }
-]; 
-
+];
 
 function addGoalsToPage(goals) {
 
-  for (let i=0; i < goals.length; i++) {
+  for(let i=0; i < goals.length; ++i) {
 
-    const div = document.createElement("div"); 
+    let div = document.createElement("div"); 
 
     div.classList.add("goals-row"); 
 
-    const goal = goals[i];
+    const goal = goals[i]; 
 
-    div.innerHTML = `<p>${goal.title}</p>`
+    div.innerHTML = `<p>${goal.title}</p>`; 
 
-    goalsContainer.appendChild(div); 
+    goalsContainer.appendChild(div);
   }
 }
 
 addGoalsToPage(goals);
+
 

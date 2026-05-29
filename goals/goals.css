@@ -64,8 +64,41 @@ main {
   /* x | y |blur-radius | spread-radius | color  */
   box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 0, 230, 0.493);
 
+  /* animation: name |  duration | timing-function delay |  iteration-count | direction fill-mode; */
+  animation-name: boxShadowAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
 
   }
+}
+
+@keyframes boxShadowAnimation {
+
+  0% {
+  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 0, 230, 0.493);
+  }
+
+  25%{
+  box-shadow: 0px 10px 15px 3px rgba(255, 0, 55, 0.493), 0px -10px 15px 5px  rgba(0, 217, 255, 0.57);
+  }
+
+  50%{
+  box-shadow: 0px 10px 15px 8px rgba(0, 217, 255, 0.57), 0px -10px 15px 8px rgba(255, 72, 0, 0.493);
+  }
+
+  75%{
+  box-shadow: 0px 10px 15px 3px rgba(0, 255, 115, 0.493), 0px -10px 15px 5px rgba(0, 217, 255, 0.57);
+  }
+
+  100%{
+  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57)rgba(208, 255, 0, 0.57), 0px -10px 15px 5px rgba(0, 255, 115, 0.493);
+  }
+
+
+
+
 }
 
 .goals-container {
@@ -82,17 +115,16 @@ main {
   background-color: var(--goals-div-bg-color);
   /* width: 200px; 
   height: 100px; */
-  padding: 30px 100px;
+  padding: 25px 100px;
 
   display: flex; 
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 15px 15px -10px rgba(0, 217, 255, 0.57);
 
    p{
     font-size: 20px;
     color: white;
    }
-
-
 }
 
