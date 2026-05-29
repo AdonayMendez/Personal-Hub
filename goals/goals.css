@@ -64,11 +64,12 @@ main {
   /* x | y |blur-radius | spread-radius | color  */
   box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 0, 230, 0.493);
 
-  /* animation: name |  duration | timing-function delay |  iteration-count | direction fill-mode; */
+  /* animation: name |  duration | timing-function | delay |  iteration-count | direction fill-mode; */
   animation-name: boxShadowAnimation;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-delay: 1s;
   animation-direction: alternate;
 
   }
@@ -85,7 +86,7 @@ main {
   }
 
   50%{
-  box-shadow: 0px 10px 15px 8px rgba(0, 217, 255, 0.57), 0px -10px 15px 8px rgba(255, 72, 0, 0.493);
+  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 72, 0, 0.493);
   }
 
   75%{
@@ -113,14 +114,12 @@ main {
 
 .goals-row {
   background-color: var(--goals-div-bg-color);
-  /* width: 200px; 
-  height: 100px; */
-  padding: 25px 100px;
+  padding: 0px 100px;
 
   display: flex; 
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 15px 15px -8px rgba(255, 0, 0, 0.459);
+  box-shadow: 0px 10px 4px 0px rgba(255, 0, 0, 0.459);
 
    p{
     font-size: 20px;
