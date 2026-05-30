@@ -12,6 +12,8 @@ body{
   display: flex;
   flex-direction: row; 
 
+  padding: 0px 20px 0px 0px;
+
   height: 100vh;
   overflow: hidden; 
 }
@@ -99,6 +101,7 @@ header{
   display: flex; 
   justify-content: center; 
   align-items: center;
+  padding: 15px;
 
   h2{
     color: white; 
@@ -111,7 +114,7 @@ header{
 .wantList {
     /* flex: 5; */
     /* background-color: rgb(216, 94, 94); */
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
 
     height: 350px;
 
@@ -124,22 +127,62 @@ header{
     gap: 10px;
 }
 
-
 .wantList-games{
   flex: 1; 
   background-color: rgba(255, 0, 0, 0.151); 
   min-height: 150px; 
 }
+
+
+.wantList::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+.wantList::-webkit-scrollbar-track {
+    background: transparent;
+  /* background: #302727; */
+
+}
+
+.wantList::-webkit-scrollbar-thumb{
+  background: rgba(255, 0, 0, 0.5);
+  border: 3px solid transparent; 
+  border-radius: 10px;
+  background-clip: content-box;
+}
+
+
+
 .games-container {
   /* background-color: lightpink;  */
   flex:1;
-  padding: 10px 30px 10px 10px; 
+  padding: 0px 10px 10px 10px; 
+  margin-top: 15px;
 
   display: flex;
   flex-direction: column; 
   gap: 20px;
 
   overflow-y: auto; 
+}
+
+
+.games-container::-webkit-scrollbar{
+  width: 15px;
+}
+
+.games-container::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.games-container::-webkit-scrollbar-thumb{
+  background: rgba(255, 0, 0, 0.493);
+  border: 3px solid transparent; 
+  border-radius: 10px;
+  background-clip: content-box;
+
+  
 }
 
 .game {
