@@ -1,5 +1,7 @@
 const goalsContainer = document.getElementById("goalsContainer"); 
 
+//TODO: Name Goals + Optional: completion status 
+
 let goals = [
   {
     // title: ""

@@ -78,23 +78,23 @@ main {
 @keyframes boxShadowAnimation {
 
   0% {
-  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 0, 230, 0.493);
+  box-shadow: 0px 10px 7px 2px rgba(0, 217, 255, 0.57), 0px -10px 7px 2px rgba(255, 0, 230, 0.493);
   }
 
   25%{
-  box-shadow: 0px 10px 15px 3px rgba(255, 0, 55, 0.493), 0px -10px 15px 5px  rgba(0, 217, 255, 0.57);
+  box-shadow: 0px 10px 7px 2px rgba(255, 0, 55, 0.493), 0px -10px 7px 2px  rgba(0, 217, 255, 0.57);
   }
 
   50%{
-  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 72, 0, 0.493);
+  box-shadow: 0px 10px 7px 2px rgba(0, 217, 255, 0.57), 0px -10px 7px 2px rgba(255, 72, 0, 0.493);
   }
 
   75%{
-  box-shadow: 0px 10px 15px 3px rgba(0, 255, 115, 0.493), 0px -10px 15px 5px rgba(0, 217, 255, 0.57);
+  box-shadow: 0px 10px 7px 2px rgba(0, 255, 115, 0.493), 0px -10px 7px 2px rgba(0, 217, 255, 0.57);
   }
 
   100%{
-  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57)rgba(208, 255, 0, 0.57), 0px -10px 15px 5px rgba(0, 255, 115, 0.493);
+  box-shadow: 0px 10px 7px 2px rgba(0, 217, 255, 0.57), 0px -10px 7px 2px rgba(0, 255, 115, 0.493);
   }
 
 
@@ -119,7 +119,7 @@ main {
   display: flex; 
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 10px 4px 0px rgba(255, 0, 0, 0.459);
+  box-shadow: 0px 6px 0px 0px rgba(255, 0, 0, 0.459);
 
    p{
     font-size: 20px;
