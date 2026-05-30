@@ -71,7 +71,7 @@ header{
   }
 }
 
-.wishList-section{
+.wantList-section{
   /* background-color: rgb(52, 42, 165);  */
   flex: 2;
 
@@ -81,7 +81,7 @@ header{
 }
 
 
-.wishList-container{
+.wantList-container{
   background-color: var(--nav-bg-color);
   flex: 1;
   padding: 10px;
@@ -90,34 +90,46 @@ header{
   flex-direction: column;
 
   box-shadow: 0px 5px 2px -2px rgba(255, 0, 0, 0.349);
-
-
-
-  div{
-    /* background-color: rgb(0, 204, 255); */
-    flex: 1; 
-
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-
-    h2{
-      color: white; 
-      font-size: 25px;
-      font-weight: 600;
-      letter-spacing: 0px;
-    }
-  }
-
-  div:nth-of-type(2) {
-    /* background-color: rgb(216, 94, 94); */
-    flex: 5;
-
-  }
-
 }
 
 
+.wantList-title{
+  /* background-color: rgb(0, 204, 255); */
+  flex: 1; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+
+  h2{
+    color: white; 
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0px;
+  }
+}
+
+.wantList {
+    /* flex: 5; */
+    /* background-color: rgb(216, 94, 94); */
+    padding: 10px;
+
+    height: 350px;
+
+
+    overflow-y: auto;
+
+
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+
+.wantList-games{
+  flex: 1; 
+  background-color: rgba(255, 0, 0, 0.151); 
+  min-height: 150px; 
+}
 .games-container {
   /* background-color: lightpink;  */
   flex:1;
@@ -129,7 +141,6 @@ header{
 
   overflow-y: auto; 
 }
-
 
 .game {
   flex:1;
