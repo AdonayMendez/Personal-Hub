@@ -77,7 +77,8 @@ main {
   padding: 10px;
 
 
-  display: flex;
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 
 }

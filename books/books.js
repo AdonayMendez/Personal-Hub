@@ -7,7 +7,7 @@ let books = [
   },
 
   {
-    title: "Let Thddem",
+    title: "Hello World",
     description: "Mel Robbins", 
   },
 
@@ -30,34 +30,37 @@ function addBooksToPage(books){
   for(let i=0; i < books.length; i += 2){
 
     let div = document.createElement("div");
-    div.classList.add("container")
 
-    const bookOne = books[i];
-    const bookTwo = books[i + 1];
+    div.classList.add("container");
 
-    let secondBookHTML = "";
+    const book1 = books[i];
+    const book2 = books[i + 1];
 
-    if(bookTwo) {
-      secondBookHTML = `      
-        <div class="container-book">
-          <div class="book">${bookTwo.title}</div>
-          <div class="description">${bookTwo.description}</div>
-        </div>          
+    let book2InnerHTML = "";
+
+    if(book2) {
+
+      book2InnerHTML = ` 
+      <div class="container-book">
+          <div class="book">${book2.title}</div>
+          <div class="description">${book2.description}</div>
+      </div>
       `;
     }
 
+
     div.innerHTML = `
-       <div class="container-book">
-          <div class="book">${bookOne.title}</div>
-          <div class="description">${bookOne.description}</div>
-        </div> 
+      <div class="container-book">
+          <div class="book">${book1.title}</div>
+          <div class="description">${book1.description}</div>
+      </div>
 
-        ${secondBookHTML}
+      ${book2InnerHTML}
+    `;
 
-   `;
 
     booksSection.appendChild(div);
   }
 }
 
-addBooksToPage(books);
+addBooksToPage(books); 

@@ -106,15 +106,20 @@ main {
   /* background-color: blueviolet; */
   padding: 50px;
   flex: 1;
-  display: flex;
+
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 100px 100px;
+  justify-content: space-evenly; */
+  gap: 100px;
 }
 
 .goals-row {
   background-color: var(--goals-div-bg-color);
   padding: 0px 100px;
+  min-height: 230px; 
 
   display: flex; 
   justify-content: center;
