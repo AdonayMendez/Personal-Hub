@@ -63,45 +63,48 @@ main {
 }
 
 .books-section{
-  background-color: rgb(25, 139, 177); 
+  /* background-color: rgb(25, 139, 177);  */
   flex: 1;
-  
   display: flex;
   flex-direction: column;
+  align-items:center; 
 }
 
 
 .container{
-  background-color: pink; 
+  /* background-color: pink;  */
+  width: 100%;
   min-height: 380px;
   padding: 10px;
-
 
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-
 }
 
 .container-book{
-  background-color: green; 
-  flex: 1;
+  /* background-color: green;  */
   padding: 20px 60px 20px 80px;
-
   display: flex; 
-  flex-direction: row; 
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
 
 .book{
-  background-color: rgb(42, 108, 165);
+  background-color: rgba(96, 96, 96, 0.171);
   flex: 1;
-  height: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  box-shadow: 0px 6px 0px 0px rgba(255, 0, 0, 0.459);
+
 }
 
 .description{
-  background-color: hotpink; 
+  background-color: rgba(124, 124, 124, 0.438); 
   flex: 1; 
-  height:150px
+  min-height:150px;
+  max-width: 300px;
+  box-shadow: 0px 6px 0px 0px rgba(255, 0, 0, 0.459);
+
 }

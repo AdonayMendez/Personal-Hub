@@ -1,0 +1,85 @@
+@import url(../variables.css);
+
+*{
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--main-bg-color);
+
+  display: flex; 
+  flex-direction: column; 
+
+  min-height: 100vh; 
+}
+
+header{
+  background-color: blue; 
+  padding: 10px;
+
+  div{
+    background-color: red;
+    padding: 10px
+  }
+
+  h2{
+    color: white; 
+  }
+}
+
+main{
+  flex: 1; 
+  background-color: lightpink;
+
+  padding: 100px 10px 10px 10px ;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.schoolTitle-section{
+  min-height: 120px;
+  background-color: lightblue;
+
+  padding: 0px 400px 0px 0px;
+
+  display: flex; 
+  justify-content: start;
+  align-items: center; 
+}
+
+.schoolTitle-container{
+  background-color: var(--nav-bg-color);
+  box-shadow: 0px 4px 0px 0px red;
+  flex: 1;
+  padding: 10px;
+
+  display: flex; 
+  justify-content: center;
+
+
+  h1{
+    color: white;
+    font-size: 55px;
+    letter-spacing: 3px;
+  }
+}
+.semester-section, .highlights-section{
+  /* flex:2; */
+  padding: 10px; 
+}
+
+.semester-section{
+  background-color: rgb(39, 179, 95); 
+  min-height: 400px;
+}
+
+.highlights-section{
+  background-color: red;
+  min-height: 400px;
+
+}
+
+
