@@ -21,7 +21,8 @@ header{
 
   div{
     background-color: red;
-    padding: 10px
+    padding: 10px;
+    display: inline-block;
   }
 
   h2{
@@ -31,23 +32,21 @@ header{
 
 main{
   flex: 1; 
-  background-color: lightpink;
+  /* background-color: lightpink; */
 
-  padding: 100px 10px 10px 10px ;
+  /* padding: 100px 10px 0px 10px ; */
 
   display: flex;
   flex-direction: column;
 }
 
 .schoolTitle-section{
-  min-height: 120px;
+  min-height: 150px;
   background-color: lightblue;
-
-  padding: 0px 400px 0px 0px;
 
   display: flex; 
   justify-content: start;
-  align-items: center; 
+  align-items: end; 
 }
 
 .schoolTitle-container{
@@ -66,20 +65,114 @@ main{
     letter-spacing: 3px;
   }
 }
-.semester-section, .highlights-section{
-  /* flex:2; */
-  padding: 10px; 
+
+
+
+.info{
+  /* background-color: blue; */
+  padding: 100px 20px 20px 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .semester-section{
-  background-color: rgb(39, 179, 95); 
-  min-height: 400px;
+  /* background-color: rgb(39, 179, 95);  */
+  flex: 1;
+
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;
 }
 
-.highlights-section{
-  background-color: red;
-  min-height: 400px;
+.semester-title{
+  background-color: rgba(90, 66, 90, 0.3); 
+  /* height: 100px; */
+  padding: 30px 20px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: var(--nav-bg-color); */
+  box-shadow: 0px 4px 0px 0px red;
+}
+
+.semester-container{
+  /* background-color: gold;  */
+  flex: 1;
+  /* padding: 30px 10px 0px 10px;  */
+
+  display: flex;
+}
+
+.semester-container2{
+  background-color: rgba(68, 81, 80, 0.375); 
+  
+  flex: 1;
+  height: 500px;
+  padding: 20px;
+
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px;
+
+  overflow-y: auto;
+
+  div{
+    background-color: rgba(91, 125, 91, 0.533); 
+    flex: 1; 
+    min-height: 85px;
+  }
+}
+
+
+.highlight-section{
+  /* background-color: rgb(39, 179, 95);  */
+  flex: 1;
+
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;
+}
+
+.highlight-title{
+  background-color: rgba(172, 172, 172, 0.325); 
+  /* height: 100px; */
+  padding: 30px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 4px 0px 0px red;
+}
+
+.highlight-container{
+  /* background-color: gold;  */
+  flex: 1;
+  /* padding: 10px;  */
+
+  display: flex;
+}
+
+.highlight-container2{
+  background-color: var(--nav-bg-color);
+  flex: 1;
+  /* height: 350px; */
+  padding: 20px;
+
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px;
+
+  overflow-y: auto;
+
+  div{
+    background-color: rgba(95, 95, 95, 0.464); 
+    flex: 1; 
+    min-height: 85px;
+  }
 }
 
 
