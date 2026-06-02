@@ -1,103 +1,87 @@
-@import url('../variables.css');
+  @import url('../variables.css');
 
 *{
   margin: 0; 
   padding: 0; 
   box-sizing: border-box;
+  color: white; 
 }
+
+a{
+  text-decoration: none;
+}
+
+
 
 body{
   background-color: var(--main-bg-color);
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  /* background-color: yellow; */
+  height: 100vh;
 }
 
 
 
 header {
-  background-color: var(--nav-bg-color);
+  flex: 1;
+  /* background-color: green; */
   padding: 10px;
 
-  nav {
-    /* background-color: bisque; */
-    padding: 10px;
-    border: 1px solid var(--main-border-color); 
+  display: flex; 
+}
+
+.nav-container{
+  /* background-color: lightblue;  */
+  padding: 10px; 
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;
+  overflow-y: auto;
 
 
-    ul {
+  div{
+    /* flex: 1; */
+    height: 150px;
+    flex-shrink: 0;
+    background-color: rgba(149, 140, 119, 0.326);
 
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-
-      list-style: none;
-
-      li {
-
-        a{
-          color: white;
-          text-decoration: none;
-          font-size: 25px;
-        }
-      }
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  
+    h2{
+      font-size: 35px; 
     }
+
+  }
+
+  div:hover{
+    background-color: rgba(149, 140, 119, 0.527);
+
   }
 }
 
-
 main{
-  flex: 1;
+  flex: 2;
   /* background-color: lightcoral; */
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center; 
   /* justify-content: space-between; */
-
-  h1{
-    /* flex: 1; */
-    margin-top: auto;
-    background-color: var(--nav-bg-color);
-    color: white; 
-    font-size: 50px;
-    text-align: center;
-    padding: 1.5rem 4rem;
-    border: 1px solid var(--main-border-color); 
-    border-radius: 5px;
-  }
 
   div{
     /* background-color: yellow; */
     background-color: var(--nav-bg-color);
-    margin-top: auto;
-    width: 100%;
-    padding: 10px;
+    padding: 30px 40px;
+    border: 2px solid lightblue;
 
-      nav {
-      padding: 10px;
-      border: 1px solid var(--main-border-color); 
+    display: inline-block;
 
-
-      ul {
-
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        list-style: none;
-
-        li {
-
-          a{
-            color: white;
-            text-decoration: none;
-            font-size: 25px;
-          }
-        }
-      }
+    h1{
+      text-align: center; 
+      font-size: 60px;
     }
+
   }
 }
