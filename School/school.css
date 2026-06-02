@@ -15,14 +15,14 @@ body{
   min-height: 100vh; 
 }
 
-header{
-  background-color: blue; 
-  padding: 10px;
-
+header{ 
+  background-color: green; 
+  padding: 10px; 
+  
   div{
-    background-color: red;
-    padding: 10px;
-    display: inline-block;
+   background-color: rgb(111, 0, 128); 
+   display: inline-block; 
+   padding: 10px; 
   }
 
   h2{
@@ -31,148 +31,130 @@ header{
 }
 
 main{
-  flex: 1; 
-  /* background-color: lightpink; */
+  flex: 1;
+  background-color: rgb(0, 45, 128); 
 
-  /* padding: 100px 10px 0px 10px ; */
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px;
+}
+.schoolTitleContainer{
+  background-color: rgb(0, 128, 126);
+  min-height: 150px; 
 
   display: flex;
-  flex-direction: column;
+  align-items: end;
+
+  div:nth-of-type(1){
+    background-color: hotpink;
+    flex: 2;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 4px 0px 0px red;
+
+    h1{
+      color: white;
+      font-size: 60px;
+    }
+  }
+
+  div:nth-of-type(2){
+    flex: 1;
+  }
 }
 
-.schoolTitle-section{
-  min-height: 150px;
-  background-color: lightblue;
-
-  display: flex; 
-  justify-content: start;
-  align-items: end; 
-}
-
-.schoolTitle-container{
-  background-color: var(--nav-bg-color);
-  box-shadow: 0px 4px 0px 0px red;
+.schoolInfo{
+  /* min-height: 500px; */
+  background-color: rgb(128, 0, 117); 
   flex: 1;
-  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schoolInfo-container{
+  background-color: rgb(74, 74, 180); 
+  height: 500px;
+  padding: 10px 50px;
+  flex: 1;
+  display: flex;
+  gap: 50px;
+}
+
+.semester-info, .highlight-info{
+  background-color: lightgreen; 
+  flex: 1;
 
   display: flex; 
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px; 
+}
 
+.title{
+  background-color: lightblue; 
+  padding: 10px;
 
   h1{
     color: white;
-    font-size: 55px;
-    letter-spacing: 3px;
+    text-align: center; 
   }
 }
 
+.content {
+  background-color: teal;
+  height: 350px;
+  padding: 10px;
 
 
-.info{
-  /* background-color: blue; */
-  padding: 100px 20px 20px 20px;
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.semester-section{
-  /* background-color: rgb(39, 179, 95);  */
-  flex: 1;
+  overflow-y: auto; 
 
   display: flex;
   flex-direction: column; 
-  gap: 30px;
-}
-
-.semester-title{
-  background-color: rgba(90, 66, 90, 0.3); 
-  /* height: 100px; */
-  padding: 30px 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* background-color: var(--nav-bg-color); */
-  box-shadow: 0px 4px 0px 0px red;
-}
-
-.semester-container{
-  /* background-color: gold;  */
-  flex: 1;
-  /* padding: 30px 10px 0px 10px;  */
-
-  display: flex;
-}
-
-.semester-container2{
-  background-color: rgba(68, 81, 80, 0.375); 
-  
-  flex: 1;
-  height: 500px;
-  padding: 20px;
-
-  display: flex; 
-  flex-direction: column; 
-  gap: 30px;
-
-  overflow-y: auto;
+  gap: 20px;
 
   div{
-    background-color: rgba(91, 125, 91, 0.533); 
-    flex: 1; 
-    min-height: 85px;
+    background-color: skyblue;
+    height: 100px;
+    flex-shrink: 0;
   }
 }
 
+/*! Highlight Section  */
 
-.highlight-section{
-  /* background-color: rgb(39, 179, 95);  */
-  flex: 1;
-
-  display: flex;
-  flex-direction: column; 
-  gap: 30px;
-}
 
 .highlight-title{
-  background-color: rgba(172, 172, 172, 0.325); 
-  /* height: 100px; */
-  padding: 30px 20px;
+  background-color: lightblue; 
+  padding: 10px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  box-shadow: 0px 4px 0px 0px red;
-}
-
-.highlight-container{
-  /* background-color: gold;  */
-  flex: 1;
-  /* padding: 10px;  */
-
-  display: flex;
-}
-
-.highlight-container2{
-  background-color: var(--nav-bg-color);
-  flex: 1;
-  /* height: 350px; */
-  padding: 20px;
-
-  display: flex; 
-  flex-direction: column; 
-  gap: 30px;
-
-  overflow-y: auto;
-
-  div{
-    background-color: rgba(95, 95, 95, 0.464); 
-    flex: 1; 
-    min-height: 85px;
+  h1{
+    color: white;
+    text-align: center; 
   }
 }
+
+.highlight-content {
+  background-color: teal;
+  height: 350px;
+  padding: 10px;
+  display: flex;
+
+  div{
+    background-color: skyblue;
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+
 
 
