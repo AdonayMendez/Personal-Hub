@@ -148,3 +148,56 @@ main {
   
 } */
 
+.openBtn-div{
+  background-color: rgba(255, 255, 0, 0.432);
+
+  cursor: pointer; 
+}
+
+/* !Modal */
+
+
+
+
+/* background */
+.modal-overlay {
+  display: none; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  width: 100%;
+  height: 100%;
+  background: rgba(248, 41, 41, 0.5);
+
+}
+
+/* show the modal */
+
+.modal-overlay.show{
+  display: block; 
+}
+
+
+/* Modal box */
+
+.modal-box{
+  background: white; 
+  width: 90%; 
+  max-width: 400px; 
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px; 
+  position: relative; 
+}
+
+/* close btn */
+
+.modal-close {
+  position: absolute; 
+  right: 12px; 
+  top: 8px; 
+  font-size: 24px; 
+  border: none; 
+  background: none; 
+  cursor: pointer; 
+}

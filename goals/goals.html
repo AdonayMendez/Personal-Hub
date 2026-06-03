@@ -10,8 +10,9 @@
 
   <body>
 
-    <header>
 
+
+    <header>
       <nav>
         <ul>
           <li><a href="../main/main.html">Hub</a></li>
@@ -21,13 +22,25 @@
 
     <main>
       <div class="goals-title"><h1>Goals</h1></div>
+
+    <div id="openBtn" class="openBtn-div">Open Modal</div>
+
       
       <div class="goals-container" id="goalsContainer">
 
-        
+      
+      </div>
 
-      </div> 
     </main>
+
+
+    <div id="modal" class="modal-overlay" >
+      <div class="modal-box">
+        <button id="closeBtn" class="modal-close">x</button>
+        <h3>Hello!</h3>
+        <p>This is a modal popop.</p>
+      </div>
+    </div>
 
    <script src="/goals/goals.js"></script> 
   </body>
