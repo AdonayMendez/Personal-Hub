@@ -1,7 +1,10 @@
 const goalsContainer = document.getElementById("goalsContainer"); 
 const modal = document.getElementById("modal");
-const modalTitle = document.getElementById("title");
-const modalDescription = document.getElementById("description");
+// const modalTitle = document.getElementById("title");
+const currentFocus = document.getElementById("focus");
+const goalDescription = document.getElementById("goalDescription");
+const futureGoals = document.getElementById("futureGoals");
+
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn")
 
@@ -10,7 +13,9 @@ const closeBtn = document.getElementById("closeBtn")
 let goals = [
   {
     title: "Programming",
-    description: "Hi"
+    focus: '- Front End Development',
+    goal: '- Finish MyHub Version 1',
+    future: ' - Git / GitHub Fundamentals'
   },
 
   {
@@ -65,24 +70,37 @@ function addGoalsToPage(goals) {
 addGoalsToPage(goals);
 
 
+
+
+
+
+
+// pass information from the goals array to the function
+// declared as goal due to const goal = goals[i]; 
+// The loop holds the goals info ehere it will be used
 function openModal(goal){
-  modalTitle.textContent = goal.title; 
-  modalDescription.textContent = goal.description;
+  currentFocus.textContent = goal.focus; 
+  goalDescription.textContent = goal.goal;
+  futureGoals.textContent = goal.future;
   modal.classList.add("show");
 }
 
-function closeModal(goal){
+function closeModal(){
   modal.classList.remove("show"); 
 }
 
 closeBtn.addEventListener("click", closeModal);
 
 
+  // if the user clicks on the modal overlay
+
 modal.addEventListener("click", function(e){
   if(e.target === modal){
     closeModal();
   }
 });
+
+// if the user presses down on the Esc key
 
 document.addEventListener("keydown", function(e){
   if(e.key === "Escape"){
