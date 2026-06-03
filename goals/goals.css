@@ -18,23 +18,27 @@ body{
 
 header{
   /* background-color: yellow; */
-  padding: 15px 20px 10px 20px;
+  padding: 8px;
 
-  ul{
-    list-style: none;
+  div{
+    background-color: rgba(82, 82, 82, 0.25); 
+    display: inline-block;
+    padding: 10px 35px;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.57);
 
+    h2{
+      font-weight: 400;
+    }
 
-   a{
+  }
+
+  div:hover{
+    background-color: rgba(82, 82, 82, 0.50); 
+  }
+
+  a{
     text-decoration: none;
-    color: white;
-    font-size: 25px;
-    padding: 5px 20px;
-    /* border: 1px solid var(--main-border-color); */
-    background-color: var(--goals-div-bg-color);
   }
-  }
-
- 
 }
 
 main {
@@ -65,7 +69,7 @@ main {
   /* border-radius: 25px; */
 
   /* x | y |blur-radius | spread-radius | color  */
-  box-shadow: 0px 10px 15px 3px rgba(0, 217, 255, 0.57), 0px -10px 15px 5px rgba(255, 0, 230, 0.493);
+  box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.57);
 
   /* animation: name |  duration | timing-function | delay |  iteration-count | direction fill-mode; */
   animation-name: boxShadowAnimation;
@@ -78,7 +82,8 @@ main {
   }
 }
 
-@keyframes boxShadowAnimation {
+
+/* @keyframes boxShadowAnimation {
 
   0% {
   box-shadow: 0px 10px 7px 2px rgba(0, 217, 255, 0.57), 0px -10px 7px 2px rgba(255, 0, 230, 0.493);
@@ -103,7 +108,7 @@ main {
 
 
 
-}
+} */
 
 .goals-container {
   /* background-color: blueviolet; */
@@ -117,6 +122,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly; */
   gap: clamp(20px, 5vw, 100px);
+  
 }
 
 .goals-row {
@@ -127,36 +133,129 @@ main {
   display: flex; 
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 6px 0px 0px rgba(255, 0, 0, 0.459);
+  box-shadow: 0px 7px 8px 2px rgb(0, 0, 0), 0px 7px 8px 2px rgb(0, 0, 0);
+  animation-name: goalsAnimationBox; 
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+
+
 
    p{
-    font-size: 20px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 1px;
     color: white;
+    text-shadow: 0px 6px 4px rgb(0, 0, 0), 0 4px 8px rgb(0, 0, 0);
+
+
+    animation-name: goalsAnimationText; 
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
    }
-
-  /* animation: goalsAnimation 10s infinite linear alternate */
-
 }
 
-/* @keyframes goalsAnimation {
-
+@keyframes goalsAnimationBox{
   0%{
-  box-shadow: 0px 15px 15px -10px rgba(0, 217, 255, 0.57);
+    box-shadow: 0px 7px 8px 2px rgb(255, 0, 0), 0px 7px 8px 2px rgb(255, 0, 0);
+  }
+
+  10%{
+    box-shadow: 0px 7px 8px 2px rgb(255, 136, 0), 0px 7px 8px 2px rgb(255, 136, 0);
+  }
+
+  20%{
+    box-shadow: 0px 7px 8px 2px rgb(255, 251, 0), 0px 7px 8px 2px rgb(255, 251, 0);
+  }
+
+
+  30%{
+    box-shadow: 0px 7px 8px 2px rgb(72, 255, 0), 0px 7px 8px 2px rgb(72, 255, 0);
+  }
+
+
+  40%{
+    box-shadow: 0px 7px 8px 2px rgb(0, 255, 179), 0px 7px 8px 2px rgb(0, 255, 179);
+  }
+
+  50%{
+    box-shadow: 0px 7px 8px 2px rgb(0, 174, 255), 0px 7px 8px 2px rgb(0, 174, 255);
+  }
+
+  60%{
+    box-shadow: 0px 7px 8px 2px rgb(4, 0, 255), 0px 7px 8px 2px rgb(4, 0, 255);
+  }
+  
+  70%{
+    box-shadow: 0px 7px 8px 2px rgb(195, 0, 255), 0px 7px 8px 2px rgb(195, 0, 255);
+  }
+
+  80%{
+    box-shadow: 0px 7px 8px 2px rgb(255, 0, 191), 0px 7px 8px 2px rgb(255, 0, 191);
+  }
+
+  90%{
+    box-shadow: 0px 7px 8px 2px rgb(255, 0, 64), 0px 7px 8px 2px rgb(255, 0, 64);
   }
 
   100%{
-  box-shadow: 0px 15px 15px -10px rgba(255, 72, 0, 0.493);
+    box-shadow: 0px 7px 8px 2px rgb(255, 0, 0), 0px 7px 8px 2px rgb(255, 0, 0);
   }
 
-  
-} */
-
-.openBtn-div{
-  background-color: rgba(255, 255, 0, 0.432);
-
-  cursor: pointer; 
 }
 
+@keyframes goalsAnimationText{
+  0%{
+    text-shadow: 0px 6px 4px rgb(255, 0, 0), 0 4px 4px rgb(255, 0, 0);
+  }
+
+  10%{
+    text-shadow: 0px 6px 4px rgb(255, 136, 0), 0 4px 4px rgb(255, 136, 0);
+  }
+
+  20%{
+    text-shadow: 0px 6px 4px rgb(255, 251, 0), 0 4px 4px rgb(255, 251, 0);
+  }
+
+
+  30%{
+    text-shadow: 0px 6px 4px rgb(72, 255, 0), 0 4px 4px rgb(72, 255, 0);
+  }
+
+
+  40%{
+    text-shadow: 0px 6px 4px rgb(0, 255, 179), 0 4px 4px rgb(0, 255, 179);
+  }
+
+  50%{
+    text-shadow: 0px 6px 4px rgb(0, 174, 255), 0 4px 4px rgb(0, 174, 255);
+  }
+
+  60%{
+    text-shadow: 0px 6px 4px rgb(4, 0, 255), 0 4px 4px rgb(4, 0, 255);
+  }
+  
+  70%{
+    text-shadow: 0px 6px 4px rgb(195, 0, 255), 0 4px 4px rgb(195, 0, 255);
+  }
+
+  80%{
+    text-shadow: 0px 6px 4px rgb(255, 0, 191), 0 4px 4px rgb(255, 0, 191);
+  }
+
+  90%{
+    text-shadow: 0px 6px 4px rgb(255, 0, 64), 0 4px 4px rgb(255, 0, 64);
+  }
+
+  100%{
+    text-shadow: 0px 6px 4px rgb(255, 0, 0), 0 4px 4px rgb(255, 0, 0);
+  }
+
+}
 
 
 /* !Modal */
@@ -171,7 +270,7 @@ main {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
 
 
 }
@@ -190,9 +289,8 @@ main {
 /* Modal box */
 
 .modal-box{
-  background: #23233363; 
-  backdrop-filter: blur(5px);
-  box-shadow: 0px 8px 10px 4px white;
+  background: rgba(0, 0, 0, 0.486); 
+  box-shadow: 0px 8px 10px 4px rgba(255, 255, 255, 0.582);
   min-width: 38%; 
   /* height: 60%; */
   /* min-width: 500px;  */

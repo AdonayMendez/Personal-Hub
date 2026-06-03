@@ -12,7 +12,7 @@ const closeBtn = document.getElementById("closeBtn")
 
 let goals = [
   {
-    title: "Programming",
+    title: "Tech",
     focus: [ 
       'Front End Development',
     ],
@@ -29,31 +29,80 @@ let goals = [
   },
 
   {
-    // title: ""
+    title: "Fitness",
+    focus: [ 
+    ],
+    goal: [ 
+
+    ],
+    future: [ 
+    ]
   },
 
   {
-    // title: ""
+    title: "School",
+    focus: [ 
+    ],
+    goal: [ 
+
+    ],
+    future: [ 
+    ]    
   },
 
   {
-    // title: ""
+    title: "Music",
+    focus: [ 
+    ],
+    goal: [ 
+
+    ],
+    future: [ 
+    ]
   },
 
   {
-    // title: ""
+    title: "Reading",
+    focus: [ 
+    ],
+    goal: [ 
+
+    ],
+    future: [ 
+    ]
   },
 
   {
-    // title: ""
+    title: "Art",
+    focus: [ 
+    ],
+    goal: [ 
+
+    ],
+    future: [ 
+    ]
   },
 
   {
-    // title: ""
+    title: "Cooking",
+    focus: [ 
+    ],
+    goal: [ 
+
+    ],
+    future: [ 
+    ]
   },
 
   {
-    // title: ""
+    title: "BIBLE",
+    focus: [ 
+    ],
+    goal: [ 
+
+    ],
+    future: [ 
+    ]
   }
 ];
 
@@ -67,7 +116,8 @@ function addGoalsToPage(goals) {
 
     const goal = goals[i]; 
 
-    div.innerHTML = `<p>${goal.title}</p>`;
+    div.innerHTML = `
+      <p>${goal.title}</p>`;
     
     div.addEventListener("click", function(){
       openModal(goal);
