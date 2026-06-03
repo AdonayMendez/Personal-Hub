@@ -1,5 +1,7 @@
 const goalsContainer = document.getElementById("goalsContainer"); 
 const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("title");
+const modalDescription = document.getElementById("description");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn")
 
@@ -7,7 +9,8 @@ const closeBtn = document.getElementById("closeBtn")
 
 let goals = [
   {
-    // title: ""
+    title: "Programming",
+    description: "Hi"
   },
 
   {
@@ -49,7 +52,11 @@ function addGoalsToPage(goals) {
 
     const goal = goals[i]; 
 
-    div.innerHTML = `<p>${goal.title}</p>`; 
+    div.innerHTML = `<p>${goal.title}</p>`;
+    
+    div.addEventListener("click", function(){
+      openModal(goal);
+    });
 
     goalsContainer.appendChild(div);
   }
@@ -58,29 +65,29 @@ function addGoalsToPage(goals) {
 addGoalsToPage(goals);
 
 
-function openModal() {
+function openModal(goal){
+  modalTitle.textContent = goal.title; 
+  modalDescription.textContent = goal.description;
   modal.classList.add("show");
 }
 
-function closeModal() {
-  modal.classList.remove("show");
+function closeModal(goal){
+  modal.classList.remove("show"); 
 }
 
-openBtn.addEventListener("click", openModal); 
 closeBtn.addEventListener("click", closeModal);
 
 
-// Close when clicking outside the modal box
-openBtn.addEventListener("click", function(event) {
-  if (event.target === modal){
-  closeModal();
+modal.addEventListener("click", function(e){
+  if(e.target === modal){
+    closeModal();
   }
 });
 
-// close when pressing Escape 
-
-document.addEventListener("keydown", function(event){
-  if(event.key === "Escape"){
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
     closeModal();
   }
-})
+});
+
+
