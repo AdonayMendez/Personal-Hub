@@ -159,9 +159,6 @@ main {
 
 
 
-
-
-
 /* !Modal */
 
 
@@ -174,6 +171,8 @@ main {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+
 
 }
 
@@ -191,10 +190,11 @@ main {
 /* Modal box */
 
 .modal-box{
-  background: #232333; 
-  box-shadow: 0px 6px 7px 0px white;
-  width: 40%; 
-  height: 60%;
+  background: #23233363; 
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 8px 10px 4px white;
+  min-width: 38%; 
+  /* height: 60%; */
   /* min-width: 500px;  */
   padding: 30px;
   border-radius: 10px; 
@@ -208,20 +208,24 @@ main {
 
   .headings{
     flex: 1; 
-    background-color: rgba(245, 245, 220, 0.24);
+    /* background-color: rgba(245, 245, 220, 0.027); */
     padding: 10px;
 
     display: flex;
     flex-direction: column; 
 
     h3{
-      padding: 10px 0px;
-      font-size: 25px;
+      padding: 15px 0px;
+      font-size: 28px;
+      font-weight: 500;
 
     }
     p{
-      padding: 0px 0px 0px 20px;
+      padding: 0px 0px 10px 20px;
       flex: 1;
+      font-weight: 100;
+      font-size: 20px;
+      letter-spacing: .5px;
     
     }
 
@@ -236,9 +240,9 @@ main {
 .modal-close {
   position: absolute; 
   color: white;
-  right: 12px; 
-  top: 8px; 
-  font-size: 24px; 
+  right: 20px; 
+  top: 10px; 
+  font-size: 30px; 
   border: none; 
   background: none; 
   cursor: pointer; 
