@@ -1,7 +1,7 @@
 const goalsContainer = document.getElementById("goalsContainer"); 
 const modal = document.getElementById("modal");
 // const modalTitle = document.getElementById("title");
-const currentFocus = document.getElementById("focus");
+const currentFocus = document.getElementById("currentFocus");
 const goalDescription = document.getElementById("goalDescription");
 const futureGoals = document.getElementById("futureGoals");
 
@@ -13,9 +13,19 @@ const closeBtn = document.getElementById("closeBtn")
 let goals = [
   {
     title: "Programming",
-    focus: '- Front End Development',
-    goal: '- Finish MyHub Version 1',
-    future: ' - Git / GitHub Fundamentals'
+    focus: [ 
+      '- Front End Development',
+      '- Front End Development',
+    ],
+    goal: [ 
+      '- Finish MyHub Version 1',
+      '- Finish MyHub Version 1',
+
+    ],
+    future: [ 
+      ' - Git / GitHub Fundamentals',
+      ' - Git / GitHub Fundamentals'
+    ]
   },
 
   {
@@ -79,10 +89,41 @@ addGoalsToPage(goals);
 // declared as goal due to const goal = goals[i]; 
 // The loop holds the goals info ehere it will be used
 function openModal(goal){
-  currentFocus.textContent = goal.focus; 
-  goalDescription.textContent = goal.goal;
-  futureGoals.textContent = goal.future;
+  currentFocus.innerHTML = '';
+  goalDescription.innerHTML = '';
+  futureGoals.innerHTML = '';
+
   modal.classList.add("show");
+
+
+  goal.focus.forEach(function(item){
+    
+    let p = document.createElement("p");
+
+    p.textContent = item; 
+
+    currentFocus.appendChild(p);
+
+  });
+
+  goal.goal.forEach(function(item) {
+    
+    let p = document.createElement("p");
+    p.textContent = item; 
+
+    goalDescription.appendChild(p);
+
+  });
+  //todo: practice forEach property
+
+  goal.future.forEach(function(item) {
+    let p = document.createElement("p");
+
+    p.textContent = item;
+
+    futureGoals.appendChild(p);
+  });
+
 }
 
 function closeModal(){
