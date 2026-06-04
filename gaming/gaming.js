@@ -4,46 +4,45 @@ const wantListGames = document.getElementById("wantListGames");
 const games = [
   {
     title: "Cod Mobile" ,
-    num: 1
+    imgSrc: "../codMobile-1.jpg"
   },
 
   {
     title: "Real Flight Simulator",
-    num: 2
+    imgSrc: "../warRobots-1.jpg"
+    
 
   },
 
   {
     title: "112 Operator",
-    num: 3
+    imgSrc: "../112-operator-1.jpg"
+    
+  },
+
+ { 
+    title: "112 Operator",
+    imgSrc: "../rfs-1.jpg"
+    
   },
 ];
 
 const wantGames = [
   {
     title: "",
-    num: 1
+    imgSrc: "../factorio-1.jpg"
   },
 
   {
     title: "",
-    num: 2
+    imgSrc: "../runningTrain-1.jpg"
+
   },
 
 
   {
     title: "",
-    num: 3
-  },
-
-  {
-    title: "",
-    num: 4
-  },
-
-    {
-    title: "",
-    num: 5
+    imgSrc: "../forzaHorizon6-1.jpg"
   }
 ];
 
@@ -58,9 +57,10 @@ function addGamesToPage(games){
     const game = games[i]; 
 
     div.innerHTML = `
-    <p>${game.num}</p>
-    <h1>${game.title}</h1>
-    `
+    <div class="img-overlay"></div>
+    <img src=${game.imgSrc}>
+
+    `;
     gamesContainer.appendChild(div);
   } 
 }
@@ -74,13 +74,14 @@ function addWantListGamesToPage(wantGames) {
 
     div.classList.add("wantList-games"); 
 
-    const game = wantGames[i];
+    const wantGame = wantGames[i];
 
     div.innerHTML = 
     `
-    <p>${game.num}</p>
-    <h1>${game.title}</h1>
-    `
+    <div class="img-overlay"></div>
+    <img src=${wantGame.imgSrc}>
+   
+    `;
 
     wantListGames.appendChild(div);
   }
@@ -88,5 +89,5 @@ function addWantListGamesToPage(wantGames) {
 
 
 
-addGamesToPage(games)
+addGamesToPage(games);
 addWantListGamesToPage(wantGames);

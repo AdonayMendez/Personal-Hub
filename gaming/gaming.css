@@ -1,10 +1,12 @@
 @import url(../variables.css); 
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 *{
   padding: 0; 
   margin: 0; 
   box-sizing: border-box; 
-  font: var(--quotes-font-family);
+  color: white;
+  font-family: "Jersey 15";
 }
 
 body{
@@ -14,8 +16,8 @@ body{
 
   padding: 0px 20px 0px 0px;
 
-  height: 100vh;
-  overflow: hidden; 
+  height: 150vh;
+  /* overflow: hidden;  */
 }
 
 main {
@@ -28,23 +30,27 @@ main {
 
 header{
   /* background-color: lightblue;  */
-  padding: 10px; 
+  padding: 8px; 
 
   div{
-    background-color: var(--nav-bg-color); 
+    background-color: rgba(82, 82, 82, 0.25); 
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 35px;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.57);
   }
 
   h2{
-    color: white; 
+    font-weight: 400;
+
   }
 }
 
 .hero-section{
   /* background-color: brown;  */
-  flex: 1;
-  padding: 20px;
+  /* flex: 1; */
+  height: 500px;
+  padding: 100px 20px 20px 20px;
+  flex-shrink: 0;
 
   display: flex; 
   justify-content: center;
@@ -57,66 +63,79 @@ header{
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    gap: 20px;
+    gap: 0px;
 
     h1{
-      color: white; 
-      font-family: "Inter";
       font-weight: 500;
-      font-size: 60px;
+      font-size: 150px;
       letter-spacing: 2px;
     }
 
-    h3{
-      color: white;
+    p{
+      padding-bottom: 5px;
     }
   }
 }
 
 .wantList-section{
   /* background-color: rgb(52, 42, 165);  */
-  flex: 2;
-
+  flex: 1;
+  
+  height: 600px;
   display: flex;
+  justify-content: center; 
+  align-items: start; 
 
-  padding: 40px 60px;
+  padding: 0px 0px;
 }
 
 
 .wantList-container{
-  background-color: var(--nav-bg-color);
-  flex: 1;
+  background-color: rgba(51, 57, 76, 18%);
+  /* flex: 1; */
+  width: 500px;
+  /* height: 95%; */
   padding: 10px;
-  
   display: flex; 
   flex-direction: column;
+  justify-content:start;
 
-  box-shadow: 0px 5px 2px -2px rgba(255, 0, 0, 0.349);
+  /* box-shadow: 0px 5px 2px -2px rgba(255, 0, 0, 0.349); */
 }
 
 
 .wantList-title{
   /* background-color: rgb(0, 204, 255); */
-  flex: 1; 
+  /* flex: 1;  */
   display: flex; 
   justify-content: center; 
   align-items: center;
-  padding: 15px;
+  padding: 20px 15px 60px 15px;
+
+
+  div{
+    display: inline-block; 
+    background-color: rgba(100, 95, 95, 0.5); 
+    padding: 12px 30px;
+  }
 
   h2{
-    color: white; 
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
+  }
+
+  p{
+    text-align: center;
   }
 }
 
 .wantList {
     /* flex: 5; */
     /* background-color: rgb(216, 94, 94); */
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px;
 
-    height: 350px;
+    height: 550px;
 
 
     overflow-y: auto;
@@ -124,14 +143,33 @@ header{
 
     display: flex;
     flex-direction: column; 
-    gap: 10px;
+    gap: 60px;
 }
 
 .wantList-games{
-  flex: 1; 
-  background-color: rgba(255, 0, 0, 0.151); 
-  min-height: 150px; 
+  position: relative;
+  height: 200px;
+  background-color: rgba(99, 99, 99, 0.151); 
+  flex-shrink: 0;
+
+  img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+.img-overlay{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(35, 35, 51, 0.411);
+    width: 100%; 
+    height: 100%;
+    z-index: 2;
+  }
 }
+
 
 
 .wantList::-webkit-scrollbar {
@@ -146,8 +184,8 @@ header{
 }
 
 .wantList::-webkit-scrollbar-thumb{
-  background: rgba(255, 0, 0, 0.5);
-  border: 3px solid transparent; 
+  background: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.342); 
   border-radius: 10px;
   background-clip: content-box;
 }
@@ -157,12 +195,14 @@ header{
 .games-container {
   /* background-color: lightpink;  */
   flex:1;
+  height: clamp(1000px, 150vh, 1280px);
   padding: 0px 10px 10px 10px; 
   margin-top: 15px;
 
   display: flex;
   flex-direction: column; 
-  gap: 20px;
+  align-items: center;
+  gap: 40px;
 
   overflow-y: auto; 
 }
@@ -177,8 +217,7 @@ header{
 }
 
 .games-container::-webkit-scrollbar-thumb{
-  background: rgba(255, 0, 0, 0.493);
-  border: 3px solid transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.308); 
   border-radius: 10px;
   background-clip: content-box;
 
@@ -186,9 +225,28 @@ header{
 }
 
 .game {
-  flex:1;
-  min-height: 300px;
+  position: relative; 
+  /* flex: 1; */
+  height: clamp(300px, 50vh, 600px);
+  width: clamp(300px, 40vw, 1000px);
   flex-shrink: 0;
   background-color: var(--nav-bg-color);
-  box-shadow: 0px 5px 2px -2px rgba(255, 0, 0, 0.349);
+  /* box-shadow: 0px 5px 2px -2px rgba(255, 0, 0, 0.349); */
+
+  img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+.img-overlay{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(35, 35, 51, 0.411);
+    width: 100%; 
+    height: 100%;
+    z-index: 2;
+  }
 }
