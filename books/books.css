@@ -1,11 +1,12 @@
 @import url(../variables.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Londrina+Solid:wght@100;300;400;900&family=Monoton&display=swap');
 *{
   margin: 0; 
   padding: 0; 
   box-sizing: border-box;
   color: white; 
 }
+
 
 body{
   background-color: var(--main-bg-color);
@@ -16,7 +17,7 @@ body{
 
 .hero-section{
   position: relative;
-  height: 500px;
+  height: 520px;
   background-color: yellow;
   /* padding: 10px; */
 
@@ -25,11 +26,12 @@ body{
 
   header{
     position: absolute; 
-    background-color: rgba(173, 216, 230, 0.699);
+    /* background-color: rgba(173, 216, 230, 0.699); */
     width: 100%;
     top: 0;
     left: 0; 
     padding: 10px;
+    z-index: 1000;
 
     div{
       background-color: rgba(82, 82, 82, 0.25); 
@@ -51,10 +53,10 @@ body{
 
 
 .video-container{
+  position: relative;
   background-color: lightpink; 
   height: 100%;
   width: 100%; 
-
 
   video{
     width: 100%; 
@@ -62,8 +64,46 @@ body{
     object-fit:cover;
     object-position: 0% 70%;
   }
-
 }
+
+.video-overlay{
+  position: absolute; 
+  height: 100%; 
+  width: 100%;
+  top: 0; 
+  left: 0; 
+  background-color: rgba(0, 0, 0, 0.363); 
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  div{
+    height: 350px; 
+    width: 650px; 
+    /* background-color: purple; */
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+
+    h1{
+      font-family: "Monoton";
+      font-weight: 400;
+      font-size: 110px;
+      letter-spacing: 10px;
+    }
+
+    p{
+      font-family: "Limelight";
+      font-size: 20px;
+      margin-top: -25px;
+      padding-left: 200px;
+    }
+  }
+}
+
 
 
 
