@@ -104,8 +104,12 @@ main{
 }
 
 .row1-2{
-  background-color: rgba(53, 225, 191, 0.403);
-  /* width: 500px; */
+  position: relative;
+  background-image: url('../crystalCastles-album.gif');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.6);
 }
 
 .heroSection{
@@ -123,14 +127,15 @@ main{
   padding: 10px;
 
   h1{
-    color: white;
     text-align: center; 
-    font-size: 50px;
+    font-size: 80px;
+    color: #627AAF;
   }
 
   p{
     color: white;
     text-align: center; 
+    
   }
 }
 
@@ -163,7 +168,7 @@ main{
 .row2-2{
   /* background-color: #dfed186d; */
   position: relative;
-  background-image: url('../');
+  background-image: url('../DanceParty-completed.gif');
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center;
