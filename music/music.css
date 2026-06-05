@@ -35,7 +35,8 @@ header{
   }
 
   h2{
-    font-weight: 700; 
+    font-weight: 700;
+    font-size: 24px;
   }
 }
 
@@ -134,8 +135,10 @@ main{
 
   p{
     color: white;
+    font-size: 20px;
     text-align: center; 
-    
+    -webkit-text-stroke: .25px #5B3939; 
+
   }
 }
 
