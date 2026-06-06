@@ -219,12 +219,17 @@ main {
 }
 
 .book-info{
+  display: none;
   background-color: rgb(199, 76, 76);
   flex: 1;
   padding: 10px;
+}
+
+.book-info.show{
+  display: block; 
 
   display: flex; 
-  gap: 10px; 
+  gap: 10px;
 }
 
 .author-info{
