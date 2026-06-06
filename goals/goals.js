@@ -162,6 +162,7 @@ function openModal(goal){
   });
  
   //todo: practice forEach property
+
   goal.future.forEach(function(item) {
     let p = document.createElement("p");
 
@@ -176,6 +177,7 @@ function closeModal(){
   modal.classList.remove("show"); 
 }
 
+//? why not just do modal.classList.remove("show") directly?
 closeBtn.addEventListener("click", closeModal);
 
 
