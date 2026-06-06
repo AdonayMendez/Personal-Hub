@@ -20,7 +20,16 @@ let authorGenre2 = document.getElementById("genre-2");
 let wiltb2 = document.getElementById("wiltb-2"); 
 let authorPicture2 = document.getElementById("authorPic-2");
 
+//! Completed
 
+let bookShelf3 = document.getElementById("bookShelf-3"); 
+let bookInfo3 = document.getElementById("bookInfo-3"); 
+let authorName3 = document.getElementById("name-3"); 
+let authorAge3 = document.getElementById("age-3"); 
+let authorNationality3 = document.getElementById("nationality-3"); 
+let authorGenre3 = document.getElementById("genre-3"); 
+let wiltb3 = document.getElementById("wiltb-3"); 
+let authorPicture3 = document.getElementById("authorPic-3");
 
 let currentBooks = [
   {
@@ -67,6 +76,50 @@ let currentBooks = [
 
 
 let upNextBooks = [
+  {
+    title: '',
+    img: '../treoh-johnOrtberg.jpg',
+    author: {
+      name: "John Mark Comer",
+      age:  45,
+      nationality: "American",
+      genre: "Christian Nonfiction, Spiritual Formation",
+      wiltb: "I like this book because it shows me how to take my time with many things.",
+      img: "../johnmarkc-1.webp"
+    },
+    
+  },
+
+  {
+    title: '',
+    img: '../butHowDoItKnow-J.ClarkScott-1.jpg',
+    author: {
+      name: "J. Clark Scott",
+      age: "61 (born April 6, 1964)",
+      nationality: "American",
+      genre: "Technology, Computer Science, Nonfiction",
+      wiltb: "Explains how computers work in a very simple manner",
+      img: "../J.clarkScott-1.jpg"
+    },
+  },
+
+  {
+    title: '',
+    img: '../despentes-vernonSubutex-1.avif',
+    author: {
+      name: "Virginie Despentes",
+      age: "56 (born June 13, 1969)",
+      nationality: "French",
+      genre: "Literary Fiction, Social Commentary, Feminist Literature",
+      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
+      img: "../virginieDespentes-1.webp"
+    },    
+  },
+
+];
+
+
+let completedBooks = [
   {
     title: '',
     img: '../treoh-johnOrtberg.jpg',
@@ -176,7 +229,42 @@ function showBookInfo2(upNextBook){
    
    <img src = "${upNextBook.author.img}">
    `;
+}
 
+function addCompletedBooksToShelf(completedBooks){
+
+  for(let i = 0; i < completedBooks.length; i++){
+    const completedBook = completedBooks[i];
+
+    let div = document.createElement("div"); 
+
+    div.addEventListener('click', function(){
+      showBookInfo3(completedBook); 
+    });
+
+    div.innerHTML = `
+    
+    <img src = "${completedBook.img}">
+    
+    `;
+
+    bookShelf3.appendChild(div);
+  }
+}
+
+function showBookInfo3(completedBook){
+   bookInfo3.classList.add("show"); 
+
+   authorName3.textContent = completedBook.author.name;
+   authorAge3.textContent = completedBook.author.age;
+   authorNationality3.textContent = completedBook.author.nationality;
+   authorGenre3.textContent = completedBook.author.genre;
+   wiltb3.textContent = completedBook.author.wiltb;
+
+   authorPicture3.innerHTML = `
+   
+   <img src = "${completedBook.author.img}">
+   `;
 }
 
 
@@ -184,3 +272,5 @@ function showBookInfo2(upNextBook){
 
 addCurrentBooksToShelf(currentBooks);
 addNextBooksToShelf(upNextBooks);
+addCompletedBooksToShelf(completedBooks);
+
