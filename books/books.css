@@ -147,11 +147,89 @@ main {
   display: flex; 
   flex-direction: column; 
   gap: 50px;
+}
+
+.currently-reading-section{
+  background-color: teal;
+  flex: 1;
+  min-height: 400px;
+  display: flex; 
+  gap: 10px;
+  padding: 10px;
+}
+
+
+.book-content{
+  position: relative;
+  background-color: rgb(199, 76, 76);
+  width: 65%;
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px;
+
+  overflow: hidden;
+
+}
+.section-title{
+  flex: 1;
+  padding: 10px;
+
+  display: flex; 
+  align-items: center;
+
+  h2{
+   font-family: "Londrina Solid";
+   font-weight: 500;
+   letter-spacing: 2px;
+  }
+}
+
+.book-shelf{
+  position: relative;
+  background-color: rgb(68, 89, 112);
+  padding: 10px; 
+  flex: 3; 
+  padding: 10px;
+
+  display: flex; 
+  gap: 50px;
+
+  overflow-x: auto;
 
   div{
-    background-color: teal;
-    flex: 1;
-    min-height: 400px;
-
+    width:180px;
+    background-color: skyblue;
+    flex-shrink: 0;
   }
+}
+
+.book-shelf::-webkit-scrollbar{
+  background: transparent;
+}
+
+.book-shelf-stand{
+  background-color: beige;
+  position: absolute; 
+  bottom: 5%; 
+  left: 0; 
+  width: 100%; 
+  height: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.book-info{
+  background-color: rgb(199, 76, 76);
+  flex: 1;
+  
 }
