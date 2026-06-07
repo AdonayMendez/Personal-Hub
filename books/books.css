@@ -1,5 +1,5 @@
 @import url(../variables.css);
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Londrina+Solid:wght@100;300;400;900&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Londrina+Solid:wght@100;300;400;900&family=Monoton&display=swap');
 *{
   margin: 0; 
   padding: 0; 
@@ -15,10 +15,15 @@ body{
   flex-direction: column;
 }
 
+p{
+  font-family: "Inter";
+  font-weight: 200;
+}
+
 .hero-section{
   position: relative;
   height: 520px;
-  background-color: yellow;
+  /* background-color: yellow; */
   /* padding: 10px; */
 
   display: flex; 
@@ -54,7 +59,7 @@ body{
 
 .video-container{
   position: relative;
-  background-color: lightpink; 
+  /* background-color: lightpink;  */
   height: 100%;
   width: 100%; 
 
@@ -150,18 +155,19 @@ main {
 }
 
 .reading-section{
-  background-color: teal;
+  /* background-color: teal; */
   height: 400px;
   display: flex; 
-  gap: 10px;
-  padding: 10px;
+  gap: 20px;
+  padding: 10px 20px;
 }
 
 
 .book-content{
   position: relative;
-  background-color: rgb(199, 76, 76);
+  /* background-color: rgb(199, 76, 76); */
   width: 55%;
+  padding: 10px;
   display: flex; 
   flex-direction: column; 
   gap: 10px;
@@ -185,19 +191,20 @@ main {
 
 .book-shelf{
   position: relative;
-  background-color: rgb(68, 89, 112);
-  padding: 10px; 
-  flex: 3; 
-  padding: 10px;
+  /* background-color: rgb(68, 89, 112); */
+  flex: 3;
+  padding: 20px 20px;
 
   display: flex; 
-  gap: 50px;
+  gap: 40px;
+  
 
   overflow-x: auto;
 
   div{
-    width:180px;
-    background-color: skyblue;
+    width:150px;
+    /* padding: 15px; */
+    /* background-color: skyblue; */
     flex-shrink: 0;
     box-shadow: -8px 5px 10px 0px rgba(0, 0, 0, 0.596);
 
@@ -213,25 +220,30 @@ main {
 }
 
 .book-shelf::-webkit-scrollbar{
-  background: transparent;
+  display: none;
 }
 
 .book-shelf-stand{
-  background-color: beige;
+  /* background-color: rgb(168, 168, 155); */
+  background-color: rgb(78, 72, 86);
+
   position: absolute; 
-  bottom: 5px; 
-  left: 0; 
-  width: 100%; 
-  height: 5%;
+  border-radius: 20px;
+  bottom: 18px;
+  width: 98%; 
+  height: 3.5%;
+  box-shadow: 0px 4px 5px -2px rgb(255, 255, 255);
+
   /* border-radius: 10px; */
 }
 
 .book-info{
   display: none;
-  background-color: rgb(199, 76, 76);
+  background-color: rgba(78, 72, 86, 0.822);
   flex: 1;
-  
-  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px 0px rgb(0,0,0);
+  padding: 30px;
 }
 
 .book-info.show{
@@ -242,7 +254,7 @@ main {
 }
 
 .author-info{
-  background-color: white; 
+  /* background-color: white;  */
   flex:1;
 
   display: flex; 
@@ -251,16 +263,21 @@ main {
 }
 
 .author-name{
-  background-color: rgb(35, 78, 80); 
+  /* background-color: rgb(35, 78, 80);  */
   padding: 10px;
 
   h2{
     text-align: center; 
+    /* font-family: "Londrina Solid"; */
+    font-family: "Inter";
+
+    font-weight: 400;
+    letter-spacing: 3px;
   }
 }
 
 .author-bio{
-  background-color: rgb(35, 78, 80); 
+  /* background-color: rgb(35, 78, 80);  */
   flex: 1;
   padding: 10px;
 
@@ -268,6 +285,10 @@ main {
   flex-direction: column; 
   justify-content: space-between;
   gap: 10px;
+
+  p{
+    font-size: 16px;
+  }
 
 
   div{
@@ -280,9 +301,12 @@ main {
 
 
 .author-picture{
-  background-color: white; 
+  position: relative; 
+  /* background-color: white;  */
   height: 100%;
   width: 45%;
+  box-shadow: 0px 4px 10px 0px rgb(0,0,0);
+
 
   img{
    width: 100%; 
@@ -290,5 +314,15 @@ main {
    object-fit: cover;
    object-position: 50% 0%; 
  }
+}
+
+.author-picture-overlay{
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.178); 
+  /* z-index: 2; */
 }
 

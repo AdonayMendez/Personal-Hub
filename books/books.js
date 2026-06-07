@@ -72,6 +72,35 @@ let currentBooks = [
     },    
   },
 
+
+  {
+    title: '',
+    img: '../despentes-vernonSubutex-1.avif',
+    author: {
+      name: "Virginie Despentes",
+      age: "56 (born June 13, 1969)",
+      nationality: "French",
+      genre: "Literary Fiction, Social Commentary, Feminist Literature",
+      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
+      img: "../virginieDespentes-1.webp"
+    },    
+  },
+
+
+
+  {
+    title: '',
+    img: '../despentes-vernonSubutex-1.avif',
+    author: {
+      name: "Virginie Despentes",
+      age: "56 (born June 13, 1969)",
+      nationality: "French",
+      genre: "Literary Fiction, Social Commentary, Feminist Literature",
+      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
+      img: "../virginieDespentes-1.webp"
+    },    
+  },
+
 ];
 
 
@@ -192,6 +221,8 @@ function showBookInfo(currentBook){
 
   authorPicture.innerHTML = `
     <img src = "${currentBook.author.img}">
+    <div class="author-picture-overlay"></div>
+
  `;
 }
 
@@ -228,6 +259,8 @@ function showBookInfo2(upNextBook){
    authorPicture2.innerHTML = `
    
    <img src = "${upNextBook.author.img}">
+    <div class="author-picture-overlay"></div>
+
    `;
 }
 
@@ -245,6 +278,7 @@ function addCompletedBooksToShelf(completedBooks){
     div.innerHTML = `
     
     <img src = "${completedBook.img}">
+
     
     `;
 
@@ -256,14 +290,16 @@ function showBookInfo3(completedBook){
    bookInfo3.classList.add("show"); 
 
    authorName3.textContent = completedBook.author.name;
-   authorAge3.textContent = completedBook.author.age;
-   authorNationality3.textContent = completedBook.author.nationality;
+   authorAge3.textContent = `Age: ${completedBook.author.age}`;
+   authorNationality3.textContent = `Nationality: ${completedBook.author.nationality}`;
    authorGenre3.textContent = completedBook.author.genre;
    wiltb3.textContent = completedBook.author.wiltb;
 
    authorPicture3.innerHTML = `
    
    <img src = "${completedBook.author.img}">
+    <div class="author-picture-overlay"></div>
+  
    `;
 }
 
