@@ -9,7 +9,7 @@
 
 
 body{
-  background-color: var(--main-bg-color);
+  background-color: white;
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
@@ -114,8 +114,15 @@ p{
 
 
 main {
-  background-color: rgba(223, 182, 178, 0.70); 
-  padding: 80px 10px 10px 10px;
+  /* background-color: rgba(223, 182, 178, 0.70);  */
+  /* background-color: rgba(223, 182, 178, 0.799);  */
+    background-color: #FBF5DD;
+
+
+  
+  /* background-color: rgb(168, 168, 155); */
+
+  padding: 80px 0px 0px 0px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -127,15 +134,25 @@ main {
   display: flex; 
   justify-content: center;
   align-items: center;
+  padding: 0px 0px 100px 0px;
   
 
   div{
-    background-color:  rgba(49, 31, 22, 90%);
+    /* background-color:  rgba(49, 31, 22, 90%); */
+    background-color:  rgba(135, 133, 162, 0.829);
+  /* background-color: rgb(107, 96, 114); */
+
+
     display: inline-block;
     padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px 0px rgb(0, 0, 0);
+
 
     h3{
       font-size: 20px;  
+      font-family: "Inter";
+      font-weight: 500;
     }
   }
 }
@@ -144,8 +161,12 @@ main {
 /*! Books Section  */
 
 .books-section{
-  /* background-color: orange; */
-  padding: 100px 10px 10px 10px;
+  /* background-color: #E7E1B1; */
+  background-color: #BDD2B6;
+
+  /* background-color: rgb(107, 96, 114); */
+
+  padding: 20px;
   /* width: 100px; */
   flex: 1;
   min-height: 500px;
@@ -156,22 +177,29 @@ main {
 }
 
 .reading-section{
-  /* background-color: teal; */
-  height: 400px;
+  /* background-color: rgb(61, 70, 70); */
+  background-color: #798777;
+  height: 420px;
   display: flex; 
   gap: 20px;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  box-shadow: 0px 9px 10px 0px rgb(253, 253, 253);
+
 }
 
 
 .book-content{
   position: relative;
   /* background-color: rgb(199, 76, 76); */
+  background-color: rgba(107, 96, 114, 0);
+
   width: 55%;
-  padding: 10px;
+  padding: 10px 10px 15px 10px;
   display: flex; 
   flex-direction: column; 
   gap: 10px;
+  box-shadow: 0px 4px 10px 0px rgb(0, 0, 0);
+
 
   overflow: hidden;
 
@@ -193,11 +221,17 @@ main {
 .book-shelf{
   position: relative;
   /* background-color: rgb(68, 89, 112); */
+  /* background-color:  rgba(49, 31, 22, 0.733); */
+    background-color: #FBF5DD;
+
+
+
+
   flex: 3;
-  padding: 20px 20px;
+  padding: 20px 20px 10px 20px;
 
   display: flex; 
-  gap: 40px;
+  gap: 35px;
   
 
   overflow-x: auto;
@@ -230,9 +264,10 @@ main {
 
   position: absolute; 
   border-radius: 20px;
-  bottom: 18px;
-  width: 98%; 
-  height: 3.5%;
+  bottom: 25px;
+  right: 15px;
+  width: 96%; 
+  height: 3.8%;
   box-shadow: 0px 4px 5px -2px rgb(255, 255, 255);
 
   /* border-radius: 10px; */
@@ -240,7 +275,9 @@ main {
 
 .book-info{
   display: none;
-  background-color: rgba(78, 72, 86, 0.822);
+  /* background-color: rgba(78, 72, 86, 0); */
+  background-color: rgba(44, 54, 57, 0.671);
+
   flex: 1;
   border-radius: 6px;
   box-shadow: 0px 4px 10px 0px rgb(0,0,0);
@@ -323,7 +360,7 @@ main {
   left: 0; 
   width: 100%; 
   height: 100%; 
-  background-color: rgba(0, 0, 0, 0.178); 
+  background-color: rgba(0, 0, 0, 0.048); 
   /* z-index: 2; */
 }
 
