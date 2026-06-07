@@ -9,6 +9,9 @@ let authorGenre = document.getElementById("genre");
 let wiltb = document.getElementById("wiltb"); 
 let authorPicture = document.getElementById("authorPic");
 
+let currentBookInfoOverlay = document.getElementById("currentBookInfoOverlay");
+
+
 //! Up Next Reading Id's
 
 let bookShelf2 = document.getElementById("bookShelf-2"); 
@@ -20,6 +23,9 @@ let authorGenre2 = document.getElementById("genre-2");
 let wiltb2 = document.getElementById("wiltb-2"); 
 let authorPicture2 = document.getElementById("authorPic-2");
 
+let upNextBookInfoOverlay = document.getElementById("upNextBookInfoOverlay");
+
+
 //! Completed
 
 let bookShelf3 = document.getElementById("bookShelf-3"); 
@@ -30,6 +36,11 @@ let authorNationality3 = document.getElementById("nationality-3");
 let authorGenre3 = document.getElementById("genre-3"); 
 let wiltb3 = document.getElementById("wiltb-3"); 
 let authorPicture3 = document.getElementById("authorPic-3");
+
+let completedBookInfoOverlay = document.getElementById("completedBookInfoOverlay");
+
+
+//! Book Info Overlay
 
 let currentBooks = [
   {
@@ -212,6 +223,9 @@ function addCurrentBooksToShelf(currentBooks){
 
 function showBookInfo(currentBook){
   bookInfo.classList.add("show");
+  currentBookInfoOverlay.classList.remove("show");
+
+
 
   authorName.textContent = currentBook.author.name;
   authorAge.textContent = ` Age: ${currentBook.author.age}`;
@@ -249,6 +263,7 @@ function addNextBooksToShelf(upNextBooks){
 
 function showBookInfo2(upNextBook){
    bookInfo2.classList.add("show"); 
+   upNextBookInfoOverlay.classList.remove("show");
 
    authorName2.textContent = upNextBook.author.name;
    authorAge2.textContent = upNextBook.author.age;
@@ -288,6 +303,8 @@ function addCompletedBooksToShelf(completedBooks){
 
 function showBookInfo3(completedBook){
    bookInfo3.classList.add("show"); 
+   completedBookInfoOverlay.classList.remove("show");
+
 
    authorName3.textContent = completedBook.author.name;
    authorAge3.textContent = `Age: ${completedBook.author.age}`;
