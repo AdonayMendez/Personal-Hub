@@ -171,6 +171,57 @@ let completedBooks = [
     },    
   },
 
+  {
+    title: 'Vernon Subutex 1',
+    img: '',
+    author: {
+      name: "Virginie Despentes",
+      age: "56 (born June 13, 1969)",
+      nationality: "French",
+      genre: "Literary Fiction, Social Commentary, Feminist Literature",
+      wiltb: "Vernon was an ineteresting character with a unique view on the world and his lack of purpose.",
+      img: ""
+    },    
+  },
+
+  {
+    title: 'Project Hail Mary',
+    img: '',
+    author: {
+      name: "Andy Weir",
+      age: "53 (born June 16, 1972)",
+      nationality: "American",
+      genre: "Hard Science Fiction",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+  {
+    title: 'Rich Dad Poor Dad',
+    img: '',
+    author: {
+      name: "Robert T. Kiyosaki",
+      age: "79 (born April 8, 1947)",
+      nationality: "American",
+      genre: "Businessman, Entrepreneur, Educator",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+  {
+    title: 'Ikigai: The Japanese Secret to a Long and Happy Life',
+    img: '',
+    author: {
+      name: "Hector Garcia & Francesc Miralles",
+      age: "Hector: 45, Miralles: 57",
+      nationality: "Garcia: Spanish & Japanese, Miralles: Spanish ",
+      genre: "Non-Fiction, Self-Help, Personal Development",
+      wiltb: "",
+      img: ""
+    },    
+  },
 ];
 
 function addCurrentBooksToShelf(currentBooks){

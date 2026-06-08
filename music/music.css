@@ -166,7 +166,7 @@ main{
 .speaker-1, .speaker-2{
   /* background-color: #483F7D;  */
   width: 200px;
-  height: 110%;
+  height: 125%;
 
   display: flex; 
   flex-direction: column; 
