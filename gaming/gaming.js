@@ -57,7 +57,7 @@ const wantGames = [
   {
     title: "Forza Horizon 6",
     imgSrc: "./images/forzaHorizon6-1.jpg",
-    description: "Might be a while before I am able to play this game"
+    description: "Might be a while before I am able to play this game :("
 
   }
 ];
@@ -96,6 +96,10 @@ function addWantListGamesToPage(wantGames) {
 
     const wantGame = wantGames[i];
 
+    div.addEventListener('click', function(){
+      showWantGamesDescription(wantGame);
+    })
+
 
     div.innerHTML = 
     `
@@ -114,8 +118,17 @@ function showGameDescription(game){
   
 
   descriptionText.textContent = game.description;
+}
+
+function showWantGamesDescription(wantGame){
+  modalOverlay.classList.add("show");
+
+  descriptionText.textContent = wantGame.description;
+
 
 }
+
+
 
 function closeModal(){
   modalOverlay.classList.remove("show");
@@ -124,6 +137,10 @@ function closeModal(){
 closeBtn.addEventListener('click', function(){
   closeModal();
 });
+
+
+
+
 
 addGamesToPage(games);
 addWantListGamesToPage(wantGames);
