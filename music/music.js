@@ -5,20 +5,20 @@ const completedOverlay = document.getElementById("completedOverlay");
 
 
 spodifyOverlay.addEventListener('click', function(){
-  showWritingAlert();
+  showSodifyAlert();
 });
 
-function showWritingAlert(){
-  alert("Nothing to see here! Private Info :)");
+function showSodifyAlert(){
+  alert("Ohh, you want to check out my spodify? Yeah no! Private Info :)");
 }
 
 
 albumOverlay.addEventListener('click', function(){
-  showWritingAlert();
+  showAlbumAlert();
 });
 
-function showWritingAlert(){
-  alert("Nothing to see here! Private Info :)");
+function showAlbumAlert(){
+  alert("Im currently working on my albumn. Want to check it out? Yeah no! Private Info :)");
 }
 
 
@@ -28,14 +28,14 @@ writingOverlay.addEventListener('click', function(){
 });
 
 function showWritingAlert(){
-  alert("Nothing to see here! Private Info :)");
+  alert("You trying to peak into what im writing? Yeah no! Private Info :)");
 }
 
 
 completedOverlay.addEventListener('click', function(){
-  showWritingAlert();
+  showCompletedAlert();
 });
 
-function showWritingAlert(){
-  alert("Nothing to see here! Private Info :)");
+function showCompletedAlert(){
+  alert("I have completed some songs! But guess what? Private Info :)");
 }

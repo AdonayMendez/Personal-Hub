@@ -46,6 +46,7 @@ let currentBooks = [
   {
     title: '',
     img: './images/book-covers/treoh-johnOrtberg.jpg',
+
     author: {
       name: "John Mark Comer",
       age:  45,

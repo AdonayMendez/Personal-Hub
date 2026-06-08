@@ -1,9 +1,16 @@
 let quotesContainer = document.getElementById("quotesContainer"); 
 
 let quotes = [
+
   {
     quote: `"Instead of asking? 'Am I good enough for this?', Try asking: 'Am I willing to be bad enough at this long enough to get good?'"`
   },
+
+
+  {
+    quote: `Don't let the guilt of not knowing stop you from going - [Me]`
+  },
+
 
   {
     quote: `"Start where you are, Use what you have, Do what you can!" - [Arthur Ashe]`
