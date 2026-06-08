@@ -72,7 +72,7 @@ main{
 
 .row1-1{
   position: relative; 
-  background-image: url('../spodify.gif'); 
+  background-image: url('./images/spodify.gif'); 
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center; 
@@ -110,7 +110,7 @@ main{
 
 .row1-2{
   position: relative;
-  background-image: url('../crystalCastles-album.gif');
+  background-image: url('./images/crystalCastles-album.gif');
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center;
@@ -191,7 +191,7 @@ main{
 
 .row2-1{
   position: relative;
-  background-image: url('../TheSimpsons-writing.gif');
+  background-image: url('./images/TheSimpsons-writing.gif');
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center;
@@ -201,7 +201,7 @@ main{
 .row2-2{
   /* background-color: #dfed186d; */
   position: relative;
-  background-image: url('../DanceParty-completed.gif');
+  background-image: url('./images/DanceParty-completed.gif');
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center;

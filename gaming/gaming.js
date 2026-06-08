@@ -4,25 +4,25 @@ const wantListGames = document.getElementById("wantListGames");
 const games = [
   {
     title: "Cod Mobile" ,
-    imgSrc: "../codMobile-1.jpg"
+    imgSrc: "./images/codMobile-1.jpg"
   },
 
   {
     title: "Real Flight Simulator",
-    imgSrc: "../warRobots-1.jpg"
+    imgSrc: "./images/warRobots-1.jpg"
     
 
   },
 
   {
     title: "112 Operator",
-    imgSrc: "../112-operator-1.jpg"
+    imgSrc: "./images/112-operator-1.jpg"
     
   },
 
  { 
     title: "112 Operator",
-    imgSrc: "../rfs-1.jpg"
+    imgSrc: "./images/rfs-1.jpg"
     
   },
 ];
@@ -30,19 +30,19 @@ const games = [
 const wantGames = [
   {
     title: "",
-    imgSrc: "../factorio-1.jpg"
+    imgSrc: "./images/factorio-1.jpg"
   },
 
   {
     title: "",
-    imgSrc: "../runningTrain-1.jpg"
+    imgSrc: "./images/runningTrain-1.jpg"
 
   },
 
 
   {
     title: "",
-    imgSrc: "../forzaHorizon6-1.jpg"
+    imgSrc: "./images/forzaHorizon6-1.jpg"
   }
 ];
 

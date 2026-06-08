@@ -45,73 +45,43 @@ let completedBookInfoOverlay = document.getElementById("completedBookInfoOverlay
 let currentBooks = [
   {
     title: '',
-    img: '../treoh-johnOrtberg.jpg',
+    img: './images/book-covers/treoh-johnOrtberg.jpg',
     author: {
       name: "John Mark Comer",
       age:  45,
       nationality: "American",
       genre: "Christian Nonfiction, Spiritual Formation",
       wiltb: "I like this book because it shows me how to take my time with many things.",
-      img: "../johnmarkc-1.webp"
+      img: "./images/authors/johnmarkc-1.webp"
     },
     
   },
 
   {
     title: '',
-    img: '../butHowDoItKnow-J.ClarkScott-1.jpg',
+    img: './images/book-covers/butHowDoItKnow-J.ClarkScott-1.jpg',
     author: {
       name: "J. Clark Scott",
       age: "61 (born April 6, 1964)",
       nationality: "American",
       genre: "Technology, Computer Science, Nonfiction",
       wiltb: "Explains how computers work in a very simple manner",
-      img: "../J.clarkScott-1.jpg"
+      img: "./images/authors/J.clarkScott-1.jpg"
     },
   },
 
   {
     title: '',
-    img: '../despentes-vernonSubutex-1.avif',
+    img: './images/book-covers/despentes-vernonSubutex-1.avif',
     author: {
       name: "Virginie Despentes",
       age: "56 (born June 13, 1969)",
       nationality: "French",
       genre: "Literary Fiction, Social Commentary, Feminist Literature",
       wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
-      img: "../virginieDespentes-1.webp"
+      img: "./images/authors/virginieDespentes-1.webp"
     },    
-  },
-
-
-  {
-    title: '',
-    img: '../despentes-vernonSubutex-1.avif',
-    author: {
-      name: "Virginie Despentes",
-      age: "56 (born June 13, 1969)",
-      nationality: "French",
-      genre: "Literary Fiction, Social Commentary, Feminist Literature",
-      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
-      img: "../virginieDespentes-1.webp"
-    },    
-  },
-
-
-
-  {
-    title: '',
-    img: '../despentes-vernonSubutex-1.avif',
-    author: {
-      name: "Virginie Despentes",
-      age: "56 (born June 13, 1969)",
-      nationality: "French",
-      genre: "Literary Fiction, Social Commentary, Feminist Literature",
-      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
-      img: "../virginieDespentes-1.webp"
-    },    
-  },
-
+  }
 ];
 
 
@@ -162,7 +132,7 @@ let upNextBooks = [
 let completedBooks = [
   {
     title: '',
-    img: '../treoh-johnOrtberg.jpg',
+    img: './images/book-covers/letThem-melRobbins.jpg',
     author: {
       name: "John Mark Comer",
       age:  45,
@@ -176,7 +146,7 @@ let completedBooks = [
 
   {
     title: '',
-    img: '../butHowDoItKnow-J.ClarkScott-1.jpg',
+    img: './images/book-covers/attwn-agataChristie.jpg',
     author: {
       name: "J. Clark Scott",
       age: "61 (born April 6, 1964)",
@@ -189,7 +159,7 @@ let completedBooks = [
 
   {
     title: '',
-    img: '../despentes-vernonSubutex-1.avif',
+    img: './images/book-covers/atomicHabits-jamesClear.jpg',
     author: {
       name: "Virginie Despentes",
       age: "56 (born June 13, 1969)",
