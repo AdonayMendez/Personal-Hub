@@ -44,7 +44,7 @@ let completedBookInfoOverlay = document.getElementById("completedBookInfoOverlay
 
 let currentBooks = [
   {
-    title: '',
+    title: 'The Ruthless Elimination of Hurry',
     img: './images/book-covers/treoh-johnOrtberg.jpg',
 
     author: {
@@ -52,7 +52,7 @@ let currentBooks = [
       age:  45,
       nationality: "American",
       genre: "Christian Nonfiction, Spiritual Formation",
-      wiltb: "I like this book because it shows me how to take my time with many things.",
+      wiltb: "Teaching me how to take my time with many areas in my life in a world that is on a constant rush.",
       img: "./images/authors/johnmarkc-1.webp"
     },
     
@@ -79,7 +79,7 @@ let currentBooks = [
       age: "56 (born June 13, 1969)",
       nationality: "French",
       genre: "Literary Fiction, Social Commentary, Feminist Literature",
-      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
+      wiltb: "Love the protrayal of the main charater and the chase for Alex's video recordings.",
       img: "./images/authors/virginieDespentes-1.webp"
     },    
   }
@@ -132,42 +132,42 @@ let upNextBooks = [
 
 let completedBooks = [
   {
-    title: '',
+    title: 'Let Them',
     img: './images/book-covers/letThem-melRobbins.jpg',
     author: {
-      name: "John Mark Comer",
-      age:  45,
+      name: "Mel Robbins",
+      age:  "57 (born October 6, 1968)",
       nationality: "American",
-      genre: "Christian Nonfiction, Spiritual Formation",
-      wiltb: "I like this book because it shows me how to take my time with many things.",
-      img: "../johnmarkc-1.webp"
+      genre: "Personal Development, Self-Help, Motivation",
+      wiltb: "Really changed my perspective on how I should approach situations. Going from constantly worrying about what others think to just get letting them think what they want, and letting me do me.",
+      img: "./images/authors/melRobbins-1.jpg"
     },
     
   },
 
   {
-    title: '',
+    title: 'And Then There Were None',
     img: './images/book-covers/attwn-agataChristie.jpg',
     author: {
-      name: "J. Clark Scott",
-      age: "61 (born April 6, 1964)",
-      nationality: "American",
-      genre: "Technology, Computer Science, Nonfiction",
-      wiltb: "Explains how computers work in a very simple manner",
-      img: "../J.clarkScott-1.jpg"
+      name: "Agatha Christie",
+      age: "85: (September 15, 1890) - (January 12, 1976)",
+      nationality: "English",
+      genre: "Murder Mystery, Detective Fiction",
+      wiltb: "Really enjoyed reading it. The development, the plot twists. Everything was aligned so perfectly and kept me hooked! One of my favorite fiction reads.",
+      img: "./images/authors/agathaChristie-1.webp"
     },
   },
 
   {
-    title: '',
+    title: 'Atomic Habits',
     img: './images/book-covers/atomicHabits-jamesClear.jpg',
     author: {
-      name: "Virginie Despentes",
-      age: "56 (born June 13, 1969)",
-      nationality: "French",
-      genre: "Literary Fiction, Social Commentary, Feminist Literature",
-      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
-      img: "../virginieDespentes-1.webp"
+      name: "James Clear",
+      age: "40 (born January 22, 1986)",
+      nationality: "American",
+      genre: "Non-Fiction, Self-Help, Personal Development, Business & Money Management",
+      wiltb: "Really showed me strategies for building/eliminating habits",
+      img: "./images/authors/jamesClear-1.jpg"
     },    
   },
 
@@ -280,7 +280,7 @@ function showBookInfo3(completedBook){
    authorName3.textContent = completedBook.author.name;
    authorAge3.textContent = `Age: ${completedBook.author.age}`;
    authorNationality3.textContent = `Nationality: ${completedBook.author.nationality}`;
-   authorGenre3.textContent = completedBook.author.genre;
+   authorGenre3.textContent = `Genre: ${completedBook.author.genre}`;
    wiltb3.textContent = completedBook.author.wiltb;
 
    authorPicture3.innerHTML = `
