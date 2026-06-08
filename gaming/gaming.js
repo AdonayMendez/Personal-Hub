@@ -42,7 +42,7 @@ const wantGames = [
   {
     title: "Factorio",
     imgSrc: "./images/factorio-1.jpg",
-    description: "The Factory Must Grow!"
+    description: "The Factory Must Grow! Plan on getting this game soon"
   },
 
   {

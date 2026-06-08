@@ -122,11 +122,12 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly; */
   gap: clamp(20px, 5vw, 100px);
-  
 }
 
 .goals-row {
-  background-color: var(--goals-div-bg-color);
+  /* background-color: var(--goals-div-bg-color); */
+  background-color: rgba(35, 35, 51, 0.25);
+
   padding: 0px 100px;
   min-height: 230px; 
 
@@ -156,7 +157,14 @@ main {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     /* animation-delay: .5s; */
-   }
+   }   
+}
+
+.goals-row:hover{
+
+  p{
+    font-size: 33px;
+  }
 }
 
 @keyframes goalsAnimationBox{

@@ -161,7 +161,7 @@ function openModal(goal){
 
   });
  
-  //todo: practice forEach property
+  //todo: practice forEach
 
   goal.future.forEach(function(item) {
     let p = document.createElement("p");
