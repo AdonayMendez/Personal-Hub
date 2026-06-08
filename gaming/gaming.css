@@ -10,6 +10,7 @@
 }
 
 body{
+  position: relative;
   background-color: var(--main-bg-color);
   display: flex;
   flex-direction: row; 
@@ -279,4 +280,52 @@ header{
 
 
   }
+}
+
+
+.modal{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.795); 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 100vh; 
+  width: 100vw;
+  z-index: 1000;
+}
+
+
+.modal.show{
+  display: block;
+
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.modal-box{
+  position: relative;
+  background-color: rgb(141, 89, 89); 
+  width: 30%; 
+  height: 30%; 
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+  h2{
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+
+.close-btn{
+  position: absolute;
+  color: black;
+  padding: 5px;
+  font-size: 20px;
+  top: 10px; 
+  right: 10px;
 }

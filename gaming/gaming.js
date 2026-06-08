@@ -1,48 +1,64 @@
 const gamesContainer = document.getElementById("gamesContainer"); 
 const wantListGames = document.getElementById("wantListGames"); 
+const imgOverlay = document.getElementById("imgOverlay"); 
+const modalOverlay = document.getElementById("modal-overlay"); 
+const descriptionText = document.getElementById("descriptionText"); 
+const closeBtn = document.getElementById("closeBtn"); 
+
+
 
 const games = [
   {
     title: "Cod Mobile" ,
-    imgSrc: "./images/codMobile-1.jpg"
+    imgSrc: "./images/codMobile-1.jpg",
+    description: "Love playing Cod Mobile. It's the game I have spent the most hours on..."
   },
 
   {
-    title: "Real Flight Simulator",
-    imgSrc: "./images/warRobots-1.jpg"
+    title: "War Robots",
+    imgSrc: "./images/warRobots-1.jpg", 
+    description: "Pay to win like crazy. Second most hours I have on a game. I have already spent 200+ dollars on it... I must stop!!" 
     
 
   },
 
   {
     title: "112 Operator",
-    imgSrc: "./images/112-operator-1.jpg"
+    imgSrc: "./images/112-operator-1.jpg",
+    description: "Love a game where I can command emergency units to help people in danger" 
+
     
   },
 
  { 
-    title: "112 Operator",
-    imgSrc: "./images/rfs-1.jpg"
+    title: "Real Flight Simulator",
+    imgSrc: "./images/rfs-1.jpg",
+    description: "Favorite plane game. In a VA currently filled with a wonderful community" 
     
   },
 ];
 
 const wantGames = [
   {
-    title: "",
-    imgSrc: "./images/factorio-1.jpg"
+    title: "Factorio",
+    imgSrc: "./images/factorio-1.jpg",
+    description: "The Factory Must Grow!"
   },
 
   {
-    title: "",
-    imgSrc: "./images/runningTrain-1.jpg"
+    title: "Running Train",
+    imgSrc: "./images/runningTrain-1.jpg",
+    description: "The peacefulness of being a train driver. I always loved train games"
+
 
   },
 
 
   {
-    title: "",
-    imgSrc: "./images/forzaHorizon6-1.jpg"
+    title: "Forza Horizon 6",
+    imgSrc: "./images/forzaHorizon6-1.jpg",
+    description: "Might be a while before I am able to play this game"
+
   }
 ];
 
@@ -55,6 +71,10 @@ function addGamesToPage(games){
     div.classList.add("game"); 
 
     const game = games[i]; 
+
+    div.addEventListener('click', function(){
+      showGameDescription(game);
+    })
 
     div.innerHTML = `
     <div class="img-overlay"></div>
@@ -76,9 +96,10 @@ function addWantListGamesToPage(wantGames) {
 
     const wantGame = wantGames[i];
 
+
     div.innerHTML = 
     `
-    <div class="img-overlay"></div>
+    <div class="img-overlay" id="imgOverlay"></div>
     <img src=${wantGame.imgSrc}>
    
     `;
@@ -88,6 +109,21 @@ function addWantListGamesToPage(wantGames) {
 }
 
 
+function showGameDescription(game){
+  modalOverlay.classList.add("show");
+  
+
+  descriptionText.textContent = game.description;
+
+}
+
+function closeModal(){
+  modalOverlay.classList.remove("show");
+}
+
+closeBtn.addEventListener('click', function(){
+  closeModal();
+});
 
 addGamesToPage(games);
 addWantListGamesToPage(wantGames);
