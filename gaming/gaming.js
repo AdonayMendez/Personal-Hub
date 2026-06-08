@@ -11,7 +11,7 @@ const games = [
   {
     title: "Cod Mobile" ,
     imgSrc: "./images/codMobile-1.jpg",
-    description: "Love playing Cod Mobile. It's the game I have spent the most hours on..."
+    description: "Love playing Cod Mobile. It's the game I have spent the most hours on. Just know, Im a PRO!!"
   },
 
   {
@@ -137,6 +137,24 @@ function closeModal(){
 closeBtn.addEventListener('click', function(){
   closeModal();
 });
+
+modalOverlay.addEventListener('click', function(event){
+  
+  if(event.target === modalOverlay){
+     
+    closeModal();
+  } 
+});
+
+
+document.addEventListener('keydown', function(event){
+  
+  if(event.key === "Escape"){
+     
+    closeModal();
+  } 
+});
+
 
 
 

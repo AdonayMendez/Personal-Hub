@@ -292,6 +292,8 @@ header{
   height: 100vh; 
   width: 100vw;
   z-index: 1000;
+  backdrop-filter: blur(2px);
+
 }
 
 
@@ -307,8 +309,11 @@ header{
 .modal-box{
   position: relative;
   background-color: rgb(141, 89, 89); 
+  border: 5px solid rgba(0, 110, 255, 0.76);
+
   width: 30%; 
   height: 30%; 
+  padding: 10px;
 
   display: flex;
   justify-content: center; 
