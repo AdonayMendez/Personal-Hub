@@ -89,41 +89,41 @@ let currentBooks = [
 let upNextBooks = [
   {
     title: '',
-    img: '../treoh-johnOrtberg.jpg',
+    img: './images/book-covers/thinkAndGrowRich-1.jpg',
     author: {
-      name: "John Mark Comer",
-      age:  45,
-      nationality: "American",
-      genre: "Christian Nonfiction, Spiritual Formation",
-      wiltb: "I like this book because it shows me how to take my time with many things.",
-      img: "../johnmarkc-1.webp"
+      name: "Napoleon Hill",
+      age:  "",
+      nationality: "",
+      genre: "",
+      wiltb: "",
+      img: "./images/authors/napoleon-hill-1.jpg"
     },
     
   },
 
   {
     title: '',
-    img: '../butHowDoItKnow-J.ClarkScott-1.jpg',
+    img: './images/book-covers/cantHurtMe-1.jpg',
     author: {
-      name: "J. Clark Scott",
-      age: "61 (born April 6, 1964)",
-      nationality: "American",
-      genre: "Technology, Computer Science, Nonfiction",
-      wiltb: "Explains how computers work in a very simple manner",
-      img: "../J.clarkScott-1.jpg"
+      name: "David Goggins",
+      age: "",
+      nationality: "",
+      genre: "",
+      wiltb: "",
+      img: "./images/authors/davidGoggins-1.webp"
     },
   },
 
   {
     title: '',
-    img: '../despentes-vernonSubutex-1.avif',
+    img: './images/book-covers/deepWork-1.jpg',
     author: {
-      name: "Virginie Despentes",
-      age: "56 (born June 13, 1969)",
-      nationality: "French",
-      genre: "Literary Fiction, Social Commentary, Feminist Literature",
-      wiltb: "The book provides a raw and realistic look at modern society while following interconnected characters through contemporary Paris.",
-      img: "../virginieDespentes-1.webp"
+      name: "Cal Newport",
+      age: "",
+      nationality: "",
+      genre: "",
+      wiltb: "",
+      img: "./images/authors/calNewport-1.jpg"
     },    
   },
 
@@ -173,53 +173,53 @@ let completedBooks = [
 
   {
     title: 'Vernon Subutex 1',
-    img: '',
+    img: './images/book-covers/vernonSubu1-1.jpg',
     author: {
       name: "Virginie Despentes",
       age: "56 (born June 13, 1969)",
       nationality: "French",
       genre: "Literary Fiction, Social Commentary, Feminist Literature",
       wiltb: "Vernon was an ineteresting character with a unique view on the world and his lack of purpose.",
-      img: ""
+      img: "./images/authors/virginieDespentes-2.webp"
     },    
   },
 
   {
     title: 'Project Hail Mary',
-    img: '',
+    img: './images/book-covers/projectHailMary-1.jpg',
     author: {
       name: "Andy Weir",
       age: "53 (born June 16, 1972)",
       nationality: "American",
       genre: "Hard Science Fiction",
       wiltb: "",
-      img: ""
+      img: "./images/authors/andyWeir-1.png"
     },    
   },
 
   {
     title: 'Rich Dad Poor Dad',
-    img: '',
+    img: './images/book-covers/richDadPoorDad-1.jpg',
     author: {
       name: "Robert T. Kiyosaki",
       age: "79 (born April 8, 1947)",
       nationality: "American",
       genre: "Businessman, Entrepreneur, Educator",
       wiltb: "",
-      img: ""
+      img: "./images/authors/robertTKiyosaki-1.avif"
     },    
   },
 
   {
     title: 'Ikigai: The Japanese Secret to a Long and Happy Life',
-    img: '',
+    img: './images/book-covers/ikagai-1.jpg',
     author: {
       name: "Hector Garcia & Francesc Miralles",
       age: "Hector: 45, Miralles: 57",
       nationality: "Garcia: Spanish & Japanese, Miralles: Spanish ",
       genre: "Non-Fiction, Self-Help, Personal Development",
       wiltb: "",
-      img: ""
+      img: "./images/authors/hectorGarcia-frencescMiralles-1.jpg"
     },    
   },
 ];
