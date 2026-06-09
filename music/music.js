@@ -18,7 +18,7 @@ albumOverlay.addEventListener('click', function(){
 });
 
 function showAlbumAlert(){
-  alert("Im currently working on my albumn. Want to check it out? Yeah no! Private Info :)");
+  alert("Im currently working on my album. Want to check it out? Yeah no! Private Info :)");
 }
 
 

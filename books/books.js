@@ -87,18 +87,17 @@ let currentBooks = [
 
 
 let upNextBooks = [
-  {
+    {
     title: '',
-    img: './images/book-covers/thinkAndGrowRich-1.jpg',
+    img: './images/book-covers/deepWork-1.jpg',
     author: {
-      name: "Napoleon Hill",
-      age:  "",
-      nationality: "",
-      genre: "",
+      name: "Cal Newport",
+      age: "43 (Born June 23, 1982)",
+      nationality: "American",
+      genre: "Productivity, Self-Help, Personal Development",
       wiltb: "",
-      img: "./images/authors/napoleon-hill-1.jpg"
-    },
-    
+      img: "./images/authors/calNewport-1.jpg"
+    },    
   },
 
   {
@@ -106,25 +105,27 @@ let upNextBooks = [
     img: './images/book-covers/cantHurtMe-1.jpg',
     author: {
       name: "David Goggins",
-      age: "",
-      nationality: "",
-      genre: "",
+      age: "51 (Born February 17, 1975)",
+      nationality: "American",
+      genre: "Memoir, Self-Help, Motivation",
       wiltb: "",
       img: "./images/authors/davidGoggins-1.webp"
     },
   },
 
+
   {
     title: '',
-    img: './images/book-covers/deepWork-1.jpg',
+    img: './images/book-covers/thinkAndGrowRich-1.jpg',
     author: {
-      name: "Cal Newport",
-      age: "",
-      nationality: "",
-      genre: "",
+      name: "Napoleon Hill",
+      age: "87 (Born October 26, 1883 – Died November 8, 1970)",
+      nationality: "American",
+      genre: "Self-Help, Personal Success, Personal Finance",
       wiltb: "",
-      img: "./images/authors/calNewport-1.jpg"
-    },    
+      img: "./images/authors/napoleon-hill-1.jpg"
+    },
+    
   },
 
 ];
@@ -222,6 +223,99 @@ let completedBooks = [
       img: "./images/authors/hectorGarcia-frencescMiralles-1.jpg"
     },    
   },
+
+  {
+    title: 'The Four Agreements',
+    img: '',
+    author: {
+      name: "Don Miguel Ruiz",
+      age: "72 (Born August 27, 1952)",
+      nationality: "Mexican",
+      genre: "Self-Help, Spirituality, Personal Development",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+  {
+    title: 'Frankenstein',
+    img: '',
+    author: {
+      name: "Mary Shelley",
+      age: "53 (Born August 30, 1797 - Died February 1, 1851)",
+      nationality: "English",
+      genre: "Gothic Fiction, Science Fiction, Romanticism",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+  {
+    title: 'The Jungle',
+    img: '',
+    author: {
+      name: "Upton Sinclair",
+      age: "90 (Born September 20, 1878 – Died November 25, 1968)",
+      nationality: "American",
+      genre: "Muckraking, Social Criticism, Political Fiction",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+  {
+    title: 'Change',
+    img: '',
+    author: {
+      name: "Édouard Louis",
+      age: "33 (Born October 30, 1992)",
+      nationality: "French",
+      genre: "Autobiographical Fiction, Memoir, Social Criticism",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+     {
+    title: 'The Meursault Investigation',
+    img: '',
+    author: {
+      name: "Kamel Daoud",
+      age: "55 (Born June 17, 1970)",
+      nationality: "Algerian",
+      genre: "Literary Fiction, Journalism, Political Commentary",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+
+     {
+    title: 'The Stranger',
+    img: '',
+    author: {
+      name: "Albert Camus",
+      age: "46 (Born November 7, 1913 – Died January 4, 1960)",
+      nationality: "French-Algerian",
+      genre: "Philosophical Fiction, Existentialism, Absurdism",
+      wiltb: "",
+      img: ""
+    },    
+  },
+
+
+  {
+    title: 'Black Bazaar',
+    img: '',
+    author: {
+      name: "Alain Mabanckou",
+      age: "59 (Born February 24, 1966)",
+      nationality: "Republic of the Congo",
+      genre: "Literary Fiction, Satire, Postcolonial Literature",
+      wiltb: "",
+      img: ""
+    },    
+  },
 ];
 
 function addCurrentBooksToShelf(currentBooks){
@@ -288,9 +382,9 @@ function showBookInfo2(upNextBook){
    upNextBookInfoOverlay.classList.remove("show");
 
    authorName2.textContent = upNextBook.author.name;
-   authorAge2.textContent = upNextBook.author.age;
-   authorNationality2.textContent = upNextBook.author.nationality;
-   authorGenre2.textContent = upNextBook.author.genre;
+   authorAge2.textContent = `Age: ${upNextBook.author.age}`;
+   authorNationality2.textContent = `Nationality: ${upNextBook.author.nationality}`;
+   authorGenre2.textContent = `Genre: ${upNextBook.author.genre}`;
    wiltb2.textContent = upNextBook.author.wiltb;
 
    authorPicture2.innerHTML = `
