@@ -59,7 +59,7 @@ let currentBooks = [
   },
 
   {
-    title: '',
+    title: 'But How Do It Know',
     img: './images/book-covers/butHowDoItKnow-J.ClarkScott-1.jpg',
     author: {
       name: "J. Clark Scott",

@@ -31,41 +31,55 @@ let goals = [
   {
     title: "Fitness",
     focus: [ 
+      'Daily Exercise',
+      'Arnold Split',
+      'Eating a lot'
     ],
     goal: [ 
+      'Lean Bulk to 175lbs'
 
     ],
     future: [ 
+
     ]
   },
 
   {
     title: "School",
     focus: [ 
-    ],
+      'Review Calc 1 & Chem 1 concepts'    ],
     goal: [ 
+      'Being prepared for Calc 2 & Chem 2'
 
     ],
     future: [ 
+      'Pass Calc 2 & Chem 2 with a B and higher'
     ]    
   },
 
   {
     title: "Music",
     focus: [ 
+      'Finding diverse beats',
+      'Listening to many different artists'
+
     ],
     goal: [ 
+      'Create a personal album by the end of summer'
 
     ],
     future: [ 
+      'Work on writing additional music'
     ]
   },
 
   {
     title: "Reading",
     focus: [ 
+      'Reading "But How Do It Know" by J. Clark Scott'
     ],
     goal: [ 
+      'Having a basic understanding of how computers work'
 
     ],
     future: [ 
@@ -75,27 +89,32 @@ let goals = [
   {
     title: "Art",
     focus: [ 
+      'Drawing with charcoal'
     ],
     goal: [ 
+      'Understand how charcoal works and different ways I can use it'
 
     ],
     future: [ 
+      'Charcoal self portrait '
     ]
   },
 
   {
     title: "Cooking",
     focus: [ 
+      'Learn how to cook basics (Especially Rice)'
     ],
     goal: [ 
-
+      'Be able to cook rice'
     ],
     future: [ 
+      'Able to make a full meal by myself'
     ]
   },
 
   {
-    title: "BIBLE",
+    title: "...",
     focus: [ 
     ],
     goal: [ 
