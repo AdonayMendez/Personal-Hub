@@ -226,94 +226,93 @@ let completedBooks = [
 
   {
     title: 'The Four Agreements',
-    img: '',
+    img: './images/book-covers/theFourAgreemnets-1.jpg',
     author: {
       name: "Don Miguel Ruiz",
       age: "72 (Born August 27, 1952)",
       nationality: "Mexican",
       genre: "Self-Help, Spirituality, Personal Development",
       wiltb: "",
-      img: ""
+      img: "./images/authors/Don_Miguel_Ruiz-1.jpg"
     },    
   },
 
   {
     title: 'Frankenstein',
-    img: '',
+    img: './images/book-covers/frankenstein-1.jpg',
     author: {
       name: "Mary Shelley",
       age: "53 (Born August 30, 1797 - Died February 1, 1851)",
       nationality: "English",
       genre: "Gothic Fiction, Science Fiction, Romanticism",
       wiltb: "",
-      img: ""
+      img: "./images/authors/Mary_Shelley-1.jpg"
     },    
   },
 
   {
     title: 'The Jungle',
-    img: '',
+    img: './images/book-covers/theJungle-1.webp',
     author: {
       name: "Upton Sinclair",
       age: "90 (Born September 20, 1878 – Died November 25, 1968)",
       nationality: "American",
       genre: "Muckraking, Social Criticism, Political Fiction",
       wiltb: "",
-      img: ""
+      img: "./images/authors/Upton_Sinclair-1.jpg"
     },    
   },
 
   {
     title: 'Change',
-    img: '',
+    img: './images/book-covers/change-1.webp',
     author: {
       name: "Édouard Louis",
       age: "33 (Born October 30, 1992)",
       nationality: "French",
       genre: "Autobiographical Fiction, Memoir, Social Criticism",
       wiltb: "",
-      img: ""
+      img: "./images/authors/Edouard_Louis-1.jpg"
     },    
   },
 
-     {
-    title: 'The Meursault Investigation',
-    img: '',
-    author: {
-      name: "Kamel Daoud",
-      age: "55 (Born June 17, 1970)",
-      nationality: "Algerian",
-      genre: "Literary Fiction, Journalism, Political Commentary",
-      wiltb: "",
-      img: ""
-    },    
-  },
-
-
-     {
+  
+  {
     title: 'The Stranger',
-    img: '',
+    img: './images/book-covers/theStanger-1.jpg',
     author: {
       name: "Albert Camus",
       age: "46 (Born November 7, 1913 – Died January 4, 1960)",
       nationality: "French-Algerian",
       genre: "Philosophical Fiction, Existentialism, Absurdism",
       wiltb: "",
-      img: ""
+      img: "./images/authors/Albert_Camus-1.webp"
     },    
   },
 
+     {
+    title: 'The Meursault Investigation',
+    img: './images/book-covers/theMeursaultInvestigation-1.jpg',
+    author: {
+      name: "Kamel Daoud",
+      age: "55 (Born June 17, 1970)",
+      nationality: "Algerian",
+      genre: "Literary Fiction, Journalism, Political Commentary",
+      wiltb: "",
+      img: "./images/authors/Kamel_Daoud-1.avif"
+    },    
+  },
 
   {
     title: 'Black Bazaar',
-    img: '',
+    img: './images/book-covers/blackBazaar-1.jpg',
     author: {
       name: "Alain Mabanckou",
       age: "59 (Born February 24, 1966)",
       nationality: "Republic of the Congo",
       genre: "Literary Fiction, Satire, Postcolonial Literature",
       wiltb: "",
-      img: ""
+      img: "./images/authors/Alain_Mabanckou-1.jpg"
     },    
   },
 ];
