@@ -40,7 +40,7 @@ let authorPicture3 = document.getElementById("authorPic-3");
 let completedBookInfoOverlay = document.getElementById("completedBookInfoOverlay");
 
 
-//! Book Info Overlay
+//? Current Books Array 
 
 let currentBooks = [
   {
@@ -49,7 +49,7 @@ let currentBooks = [
 
     author: {
       name: "John Mark Comer",
-      age:  45,
+      age:  '45 (born June 10, 1980)',
       nationality: "American",
       genre: "Christian Nonfiction, Spiritual Formation",
       wiltb: "Teaching me how to take my time with many areas in my life in a world that is on a constant rush.",
@@ -85,6 +85,7 @@ let currentBooks = [
   }
 ];
 
+//? Up Next Books Array
 
 let upNextBooks = [
     {
@@ -130,6 +131,7 @@ let upNextBooks = [
 
 ];
 
+//? Completed Books Array
 
 let completedBooks = [
   {
@@ -317,6 +319,12 @@ let completedBooks = [
   },
 ];
 
+
+//! Functions 
+
+//* function to add the currentBooks array to the bookShelf 
+//  for loop to create a div element for each object in the array
+
 function addCurrentBooksToShelf(currentBooks){
 
   for(let i = 0; i < currentBooks.length; i++){
@@ -333,14 +341,15 @@ function addCurrentBooksToShelf(currentBooks){
     `;
     bookShelf.appendChild(div);
   }
-}
+};
 
+//* function that when called adds the class show to bookInfo to display author information
+// Removes the class show for the default message ("Click here to learn about the author")
+// Gives corresponding text from array to html p elements with an id
 
 function showBookInfo(currentBook){
   bookInfo.classList.add("show");
   currentBookInfoOverlay.classList.remove("show");
-
-
 
   authorName.textContent = currentBook.author.name;
   authorAge.textContent = ` Age: ${currentBook.author.age}`;
@@ -351,9 +360,9 @@ function showBookInfo(currentBook){
   authorPicture.innerHTML = `
     <img src = "${currentBook.author.img}">
     <div class="author-picture-overlay"></div>
-
  `;
-}
+
+};
 
 function addNextBooksToShelf(upNextBooks){
 
@@ -374,7 +383,7 @@ function addNextBooksToShelf(upNextBooks){
 
     bookShelf2.appendChild(div);
   }
-}
+};
 
 function showBookInfo2(upNextBook){
    bookInfo2.classList.add("show"); 
@@ -392,7 +401,7 @@ function showBookInfo2(upNextBook){
     <div class="author-picture-overlay"></div>
 
    `;
-}
+};
 
 function addCompletedBooksToShelf(completedBooks){
 
@@ -414,7 +423,7 @@ function addCompletedBooksToShelf(completedBooks){
 
     bookShelf3.appendChild(div);
   }
-}
+};
 
 function showBookInfo3(completedBook){
    bookInfo3.classList.add("show"); 
@@ -433,10 +442,7 @@ function showBookInfo3(completedBook){
     <div class="author-picture-overlay"></div>
   
    `;
-}
-
-
-
+};
 
 addCurrentBooksToShelf(currentBooks);
 addNextBooksToShelf(upNextBooks);

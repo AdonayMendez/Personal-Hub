@@ -53,7 +53,6 @@ const wantGames = [
 
   },
 
-
   {
     title: "Forza Horizon 6",
     imgSrc: "./images/forzaHorizon6-1.jpg",
@@ -82,8 +81,8 @@ function addGamesToPage(games){
 
     `;
     gamesContainer.appendChild(div);
-  } 
-}
+  }; 
+};
 
 
 function addWantListGamesToPage(wantGames) {
@@ -109,8 +108,8 @@ function addWantListGamesToPage(wantGames) {
     `;
 
     wantListGames.appendChild(div);
-  }
-}
+  };
+};
 
 
 function showGameDescription(game){
@@ -118,21 +117,20 @@ function showGameDescription(game){
   
 
   descriptionText.textContent = game.description;
-}
+};
 
 function showWantGamesDescription(wantGame){
   modalOverlay.classList.add("show");
 
   descriptionText.textContent = wantGame.description;
 
-
-}
+};
 
 
 
 function closeModal(){
   modalOverlay.classList.remove("show");
-}
+};
 
 closeBtn.addEventListener('click', function(){
   closeModal();
@@ -154,10 +152,6 @@ document.addEventListener('keydown', function(event){
     closeModal();
   } 
 });
-
-
-
-
 
 
 addGamesToPage(games);

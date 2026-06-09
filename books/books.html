@@ -10,51 +10,58 @@
 </head>
 <body>
 
-  <section class="hero-section">
-  <header>
-   <a href="../main/main.html"><div><h2>Main</h2></div></a>
-  </header>
+  <!--! Hero Section -->
 
-  <div class="video-container">
-    <video autoplay muted loop playsinline preload="auto">
-      <source src="./videos/bookPageFlip.mp4" type="video/mp4">
-    </video>
-    <div class="video-overlay">
-      <div>
-        <h1>Books</h1>
-        <p>Love reading books ✧˖°.🎧</p>
+  <section class="hero-section">
+    <header>
+      <a href="../main/main.html"><div><h2>Main</h2></div></a>
+    </header>
+    <div class="video-container">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="./videos/bookPageFlip.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay">
+        <div>
+          <h1>Books</h1>
+          <p>Love reading books ✧˖°.🎧</p>
+        </div>
       </div>
     </div>
-  </div>
-
   </section>
 
 
+
   <main>
+
+    <!--! Mini Hero - middle section -->
+
     <section class="mini-hero">
       <div>
         <h3>Explore my reads 📖</h3>
       </div>
     </section>
 
+
+    <!--! Book Library Section -->
+
+
     <section class="books-section">
 
-      <!--!  Currently Reading Section  -->
+      <!--?  Currently Reading Section  -->
 
       <div class="reading-section">
+
+
+        <!--* Book Shelf (Left side) -->
 
         <div class="book-content">
           <div class="section-title">
             <h2>Currently Reading</h2>
-          </div>
-           
-          <div class="book-shelf" id="bookShelf">
-          </div>
-          <!-- <section class="book-shelf-stand"></section> -->
-
-
-
+          </div> 
+          <div class="book-shelf" id="bookShelf"></div>
         </div>
+
+        <!--* Author/Book Info (Right side) -->
 
         <div class="book-info" id="bookInfo">
           <div class="author-info">
@@ -70,35 +77,31 @@
                  <p id="wiltb"></p>                
                 </div>
               </div>
-
           </div>
           <div class="author-picture" id="authorPic">
           </div>
         </div>
 
-        
-          
-              <div class="book-info-overlay show" id="currentBookInfoOverlay">
-                <h2>Click on a book to learn about the author!</h2>
-              </div>
+        <!--* Readding Section Overlay that displays messgae on the right-->
+
+        <div class="book-info-overlay show" id="currentBookInfoOverlay">
+          <h2>Click on a book to learn about the author!</h2>
+        </div>
       </div>
 
 
-
-      <!--!  Up Next Reading Section  -->
-
-
+      <!--?  Up Next Reading Section  -->
 
       <div class="reading-section">
+
         <div class="book-content">
           <div class="section-title">
             <h2>Up Next</h2>
           </div>
-           
-          <div class="book-shelf" id="bookShelf-2">
-           
+          <div class="book-shelf" id="bookShelf-2"> 
           </div>
-          <!-- <div class="book-shelf-stand"></div> -->  
+
+          <!-- <div class="book-shelf-stand"></div>   -->
         </div>
 
         <div class="book-info" id="bookInfo-2">
@@ -120,32 +123,26 @@
           </div>
         </div>  
         
-            <div class="book-info-overlay show" id="upNextBookInfoOverlay">
-                <h2>Click on a book to learn about the author!</h2>
-            </div>
+        <div class="book-info-overlay show" id="upNextBookInfoOverlay">
+            <h2>Click on a book to learn about the author!</h2>
+        </div>
       </div>
 
 
-
-
-
-      <!--! Finished Reading Section  -->
+      <!--? Finished Reading Section  -->
 
       <div class="reading-section">
         <div class="book-content">
           <div class="section-title">
             <h2>Completed</h2>
           </div>
-           
-          <div class="book-shelf" id="bookShelf-3">
-           
+          <div class="book-shelf" id="bookShelf-3"> 
           </div>
           <!-- <section class="book-shelf-stand"></section> -->
         </div>
 
-
         <div class="book-info" id="bookInfo-3">
-          <div class="author-info">
+         <div class="author-info">
               <div class="author-name">
                 <h2 id="name-3"></h2>
               </div>
@@ -158,18 +155,13 @@
                  <p id="wiltb-3"></p>                
                 </div>
               </div>            
-          </div>
-
-          <div class="author-picture" id="authorPic-3">
-          </div>
+         </div>
+         <div class="author-picture" id="authorPic-3"></div>
         </div> 
-        
-        
-                <div class="book-info-overlay show" id="completedBookInfoOverlay">
-                <h2>Click on a book to learn about the author!</h2>
-              </div>  
+        <div class="book-info-overlay show" id="completedBookInfoOverlay">
+          <h2>Click on a book to learn about the author!</h2>
+        </div>  
       </div>
-
 
     </section>
 
