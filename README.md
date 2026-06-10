@@ -6,6 +6,8 @@
  ## Live Website: 
 [Visit MyHub](https://adonaymendez.github.io/Personal-Hub/) 
 
+![MyHub Home Page](screenshots/home-page.png)
+
 ## Features
   - Goals page that displays unique goals on click
   - Modal window pop-ups
