@@ -10,6 +10,7 @@
 
 a{
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -74,7 +75,6 @@ main {
   flex-direction: column; 
   gap: 40px;
   overflow-y: auto;
-
 
   div{
     /* flex: 1; */
