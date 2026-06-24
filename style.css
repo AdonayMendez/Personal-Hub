@@ -19,7 +19,6 @@ body{
   display: grid;
   grid-template-rows: auto; 
   gap: 2rem;
-  min-height: 100vh;
   padding: 2rem 1rem; 
 }
 
@@ -70,7 +69,6 @@ main {
 
 .nav-container{
   /* background-color: lightblue;  */
-  /* padding: 0px 60px 40px 60px;  */
   flex: 1;
   display: flex;
   flex-direction: column; 
@@ -122,15 +120,35 @@ main {
 
 }
 
-/* 
-@media (min-width: 40rem){
+
+@media (min-width: 80rem){
 
   body{
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr; 
+    height: 100vh;
+    overflow: hidden; 
   }
 
   header{
-    flex: 1;
+    grid-column: 2 / -1; 
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+
+    div:nth-of-type(2){
+      width: 50%; 
+    }
+
   }
-} */
+
+  main{
+    grid-column: 1 / 2;
+    min-height: 0;
+  }
+
+  .nav-container {
+    padding: 0px 60px 40px 60px; 
+  }
+}
