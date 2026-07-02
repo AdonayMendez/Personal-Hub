@@ -10,7 +10,6 @@
 body{
   background-color: var(--main-bg-color);
   min-height: 100vh;
-  /* padding: 20px; */
 }
 
 a{
@@ -28,11 +27,12 @@ header{
     display: inline-block;
     padding: 10px 35px;
     box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.57);
+
   h2{
     font-family: var(--quotes-font-family);
     font-weight: 200;
     letter-spacing: 1px;
-    /* font-size: 25px; */
+    font-size: clamp(1.2rem, 1.10rem + 0.54vw, 1.5625rem);
   }
  }
 
@@ -42,6 +42,15 @@ header{
   }
 }
 
+
+
+main{
+  /* background-color: orange;  */
+  display: flex; 
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+}
 
 
 .hero-section{
@@ -54,13 +63,13 @@ header{
     justify-content: center;
     align-items: center;
 
-    padding: 160px 100px 120px 100px;
+    /* padding: 160px 100px 120px 100px; */
 
     .title{
       color: white;
       font-family: "Inter";
       font-weight: 100;
-      font-size: 60px;
+      font-size: clamp(2rem, 1.38rem + 2.63vw, 3.75rem);
       line-height: 1.1;
       letter-spacing: 2px;
       position: relative;
@@ -75,8 +84,8 @@ header{
       transform: translateX(-50%);
       bottom: 0; 
 
-      width: 120%; 
-      height: 8.5px; 
+      width: 100%; 
+      padding: .2rem;
 
       box-shadow: 0px 0px 10px rgba(254, 233, 231, 0%);
       border-radius: 20px;
@@ -86,7 +95,6 @@ header{
       titleShadowAnimation 4s ease-in-out 3s infinite;
 
     }
-
   }
 }
 
@@ -117,12 +125,11 @@ header{
 
 .quotes-container {
    /* background-color: lightgreen; */
-   padding: 10px 60px;
-
-   gap: 50px;
+   gap: 3rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   padding: 0rem .7rem;
 }
 
 .quote-child-parent {
@@ -131,23 +138,21 @@ header{
 
   /* Apply animation: name, duration, timing, delay, fill-mode  */
   animation: shadowfadein 1s ease-in 1.5s forwards; 
-
-
 }
 
 .quote-child {
   color: white; 
   font-family: var(--quotes-font-family);
   font-weight: 200;
-  font-size: 18px;
-  letter-spacing: 1.5px;
+  font-size: clamp(0.8rem, 0.69rem + 0.49vw, 1.125rem);
+  letter-spacing: 1px;
 
   display: flex;
   flex-direction: row;
   justify-content: center; 
 
-  padding: 20px; 
-  background-color: rgba(32, 32, 44, 50%);
+  padding: 1.2rem .5rem; 
+  background-color: rgba(32, 32, 44, 0.301);
 
   transition: box-shadow 0.1s;
 }
@@ -161,4 +166,10 @@ header{
    box-shadow: 0px 8px 10px rgba(254, 233, 231, 10%);
 
   }
+}
+
+
+@media (min-width: 62.5rem){
+
+
 }
